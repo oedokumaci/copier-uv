@@ -872,13 +872,13 @@
 
 <h1 id="generating-a-project">Generating a project<a class="headerlink" href="#generating-a-project" title="Permanent link">¤</a></h1>
 <p>To generate a project, run the following command:</p>
-<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;https://github.com/pawamoy/copier-uv.git&quot;</span><span class="w"> </span>/path/to/your/new/project
+<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;https://github.com/oedokumaci/copier-uv.git&quot;</span><span class="w"> </span>/path/to/your/new/project
 </code></pre></div>
 <p>Or with a shorter command:</p>
-<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:pawamoy/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
+<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:oedokumaci/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
 </code></pre></div>
 <p>You can even generate a project without installing Copier, using <a href="https://docs.astral.sh/uv/">uv</a>:</p>
-<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--with<span class="w"> </span>copier-templates-extensions<span class="w"> </span>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:pawamoy/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--with<span class="w"> </span>copier-templates-extensions<span class="w"> </span>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:oedokumaci/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
 </code></pre></div>
 <h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">¤</a></h2>
 <p><em>The following examples are not up-to-date,
@@ -900,19 +900,19 @@ and use any character you want.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your full name
 author_fullname? Format: str
-🎤 [None]: Timothée Mazzucotelli
+🎤 [None]: Your Name
 </code></pre></div>
 <p>The full name will appear as "author" in the project's metadata.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your email
 author_email? Format: str
-🎤 [None]: dev@pawamoy.fr
+🎤 [None]: your@email.com
 </code></pre></div>
 <p>The email will appear as "author email" in the project's metadata.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your username (e.g. on GitHub)
 author_username? Format: str
-🎤 [None]: pawamoy
+🎤 [None]: your-username
 </code></pre></div>
 <p>The username you are using on the git repository provider.</p>
 <hr />
@@ -928,7 +928,7 @@ case we add support for more providers in the future.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your repository namespace
 repository_namespace? Format: str
-🎤 [pawamoy]: 
+🎤 [your-username]: 
 </code></pre></div>
 <p>The namespace (or account) on which the project will be stored.
 It defaults to the username you provided.</p>
@@ -942,14 +942,14 @@ It defaults to a slugified version of your project's name.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>The name of the person/entity holding the copyright
 copyright_holder? Format: str
-🎤 [Timothée Mazzucotelli]: 
+🎤 [Your Name]: 
 </code></pre></div>
 <p>The name of the person or entity holding the copyright on the project.
 It defaults to the full name your provided.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>The email of the person/entity holding the copyright
 copyright_holder_email? Format: str
-🎤 [dev@pawamoy.frr]: 
+🎤 [your@email.com]: 
 </code></pre></div>
 <p>The email of the person or entity holding the copyright on the project.
 It defaults to the email your provided.</p>
