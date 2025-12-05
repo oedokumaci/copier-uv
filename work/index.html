@@ -1534,7 +1534,7 @@ make<span class="w"> </span>release<span class="w"> </span><span class="nv">vers
 <li><code>check-quality</code>: Check the code quality.</li>
 <li><code>check-docs</code>: Check if the documentation builds correctly.</li>
 <li><code>check-types</code>: Check if the code is correctly typed.</li>
-<li><code>check-api</code>: Check for breaking changes in your Python API.</li>
+<li><code>check-api</code>: Check for breaking changes in your Python API (only if <code>is_library=true</code>).</li>
 </ul>
 <p>For example, if you are only interested in checking types,
 run <code>make check-types</code>.</p>
@@ -1600,6 +1600,10 @@ as a last resort you can ignore this specific error with a comment:</p>
 </code></pre></div>
 <p>...where ID is the name of the warning, for example <code>arg-type</code> or <code>union-attr</code>.</p>
 <h3 id="check-api">check-api<a class="headerlink" href="#check-api" title="Permanent link">¤</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This task is only available when the project is generated with <code>is_library=true</code>.</p>
+</div>
 <p>This actions runs <a href="https://github.com/mkdocstrings/griffe">Griffe</a>
 to search for API breaking changes since latest version. It is set
 to allow failures, and is more about providing information than
