@@ -856,7 +856,10 @@ for Python projects managed by <a href="https://github.com/astral-sh/uv">uv</a>.
 <li><strong><a href="https://github.com/Delgan/loguru">loguru</a></strong> for structured JSON logging</li>
 <li><strong>CLAUDE.md</strong> for AI assistant guidance</li>
 <li><strong>Cursor IDE integration</strong> via <code>.cursorrules</code> symlink (points to <code>CLAUDE.md</code>)</li>
-<li><strong>Library mode</strong> (<code>is_library=true</code>): enables <a href="https://github.com/mkdocstrings/griffe">Griffe</a> for API breaking change detection</li>
+<li><strong>Library mode</strong> (<code>is_library=false</code> by default): if <code>is_library</code> is set to <code>true</code>, enables <a href="https://github.com/mkdocstrings/griffe">Griffe</a> for API breaking change detection</li>
+<li><strong>Smart defaults</strong> for author info:</li>
+<li>Git email defaults to your git config <code>user.email</code> value.</li>
+<li>Git username defaults to your git config <code>user.name</code> value.</li>
 </ul>
 <h2 id="quick-setup-and-usage">Quick setup and usage<a class="headerlink" href="#quick-setup-and-usage" title="Permanent link">¤</a></h2>
 <p>Make sure all the

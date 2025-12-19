@@ -906,15 +906,17 @@ author_fullname? Format: str
 <hr />
 <div class="highlight"><pre><span></span><code>Your email
 author_email? Format: str
-🎤 [None]: your@email.com
+🎤 [your@email.com]: 
 </code></pre></div>
-<p>The email will appear as "author email" in the project's metadata.</p>
+<p>The email will appear as "author email" in the project's metadata.
+It defaults to your git config <code>user.email</code> value.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your username (e.g. on GitHub)
 author_username? Format: str
-🎤 [None]: your-username
+🎤 [your-username]: 
 </code></pre></div>
-<p>The username you are using on the git repository provider.</p>
+<p>The username you are using on the git repository provider.
+It defaults to your git config <code>user.name</code> value.</p>
 <hr />
 <div class="highlight"><pre><span></span><code>Your repository provider
 repository_provider? Format: str
