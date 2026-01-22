@@ -845,18 +845,18 @@ for Python projects managed by <a href="https://github.com/astral-sh/uv">uv</a>.
 <li>Documentation built with <a href="https://github.com/mkdocs/mkdocs">MkDocs</a>
   (<a href="https://github.com/squidfunk/mkdocs-material">Material theme</a>
   and "autodoc" <a href="https://github.com/mkdocstrings/mkdocstrings">mkdocstrings plugin</a>)</li>
-<li>Cross-platform tasks with <a href="https://github.com/pawamoy/duty">duty</a></li>
+<li>Cross-platform tasks with <a href="https://github.com/taskipy/taskipy">taskipy</a></li>
 <li>Support for GitHub workflows</li>
 <li>Auto-generated <code>CHANGELOG.md</code> from Git (conventional) commits</li>
 <li>All licenses from <a href="https://choosealicense.com/appendix/">choosealicense.com</a></li>
 </ul>
 <h3 id="additional-features-this-fork">Additional Features (this fork)<a class="headerlink" href="#additional-features-this-fork" title="Permanent link">¤</a></h3>
 <ul>
+<li><strong>CLI support</strong> with <code>__main__.py</code> entry point (run via <code>uvx --from taskipy task run</code>)</li>
 <li><strong><a href="https://marimo.io/">marimo</a> notebooks</strong> support (use <code>uv run marimo</code>)</li>
 <li><strong><a href="https://github.com/Delgan/loguru">loguru</a></strong> for structured JSON logging</li>
 <li><strong>CLAUDE.md</strong> for AI assistant guidance</li>
 <li><strong>Cursor IDE integration</strong> via <code>.cursorrules</code> symlink (points to <code>CLAUDE.md</code>)</li>
-<li><strong>Library mode</strong> (<code>is_library=false</code> by default): if <code>is_library</code> is set to <code>true</code>, enables <a href="https://github.com/mkdocstrings/griffe">Griffe</a> for API breaking change detection</li>
 <li><strong>Smart defaults</strong> for author info:</li>
 <li>Git email defaults to your git config <code>user.email</code> value.</li>
 <li>Git username defaults to your git config <code>user.name</code> value.</li>
