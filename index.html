@@ -865,10 +865,7 @@ for Python projects managed by <a href="https://github.com/astral-sh/uv">uv</a>.
 <p>Make sure all the
 <a href="https://oedokumaci.github.io/copier-uv/requirements">requirements</a>
 are met, then:</p>
-<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;https://github.com/oedokumaci/copier-uv.git&quot;</span><span class="w"> </span>/path/to/your/new/project
-</code></pre></div>
-<p>Or even shorter:</p>
-<div class="highlight"><pre><span></span><code>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:oedokumaci/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--with<span class="w"> </span>copier-templates-extensions<span class="w"> </span>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:oedokumaci/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
 </code></pre></div>
 <p>See the <a href="https://oedokumaci.github.io/copier-uv">documentation</a>
 for more details.</p>

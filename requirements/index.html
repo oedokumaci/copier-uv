@@ -785,19 +785,17 @@
 <p>To use this Copier template, you will need:</p>
 <ul>
 <li><a href="https://git-scm.com/">Git v2</a></li>
-<li><a href="https://www.python.org">Python 3</a></li>
-<li><a href="https://copier.readthedocs.io/en/stable/">Copier</a></li>
+<li><a href="https://docs.astral.sh/uv/">uv</a></li>
 </ul>
 <p>To install Git version 2, <a href="https://git-scm.com/downloads">follow the official instructions</a>.</p>
-<p>To install Python 3, download and install it from <a href="https://www.python.org/downloads/">the official website</a>, or install it with <a href="https://docs.astral.sh/uv/">uv</a>:</p>
+<p>To install uv:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
-uv<span class="w"> </span>python<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.12
 </code></pre></div>
-<p>To install Copier, use <a href="https://docs.astral.sh/uv/"><code>uvx</code></a> or <a href="https://pipx.pypa.io/stable/"><code>pipx</code></a>:</p>
-<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>copier<span class="w"> </span>--with<span class="w"> </span>copier-templates-extensions
+<p>To install Python with uv:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>python<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.X<span class="w">  </span><span class="c1"># Replace X with your desired version, e.g., 3.12</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>pipx<span class="w"> </span>install<span class="w"> </span>copier
-pipx<span class="w"> </span>inject<span class="w"> </span>copier<span class="w"> </span>copier-templates-extensions
+<p>Then generate a project with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--with<span class="w"> </span>copier-templates-extensions<span class="w"> </span>copier<span class="w"> </span>copy<span class="w"> </span>--trust<span class="w"> </span><span class="s2">&quot;gh:oedokumaci/copier-uv&quot;</span><span class="w"> </span>/path/to/your/new/project
 </code></pre></div>
 
 
