@@ -1,0 +1,159 @@
+[project]
+site_name = "{{ project_name }}"
+site_description = "{{ project_description }}"
+site_url = "https://{{ repository_namespace }}.{{ repository_provider.rsplit('.', 1)[0] }}.io/{{ repository_name }}"
+repo_url = "https://{{ repository_provider }}/{{ repository_namespace }}/{{ repository_name }}"
+repo_name = "{{ repository_namespace }}/{{ repository_name }}"
+{% if repository_provider == 'github.com' %}site_dir = "site"{% endif %}
+watch = ["zensical.toml", "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "src/{{ python_package_import_name }}"]
+copyright = "Copyright &copy; {{ copyright_date }} {{ copyright_holder }}"
+edit_uri = "edit/main/docs/"
+
+nav = [
+    { "Home" = [
+        { "Overview" = "index.md" },
+        { "Changelog" = "changelog.md" },
+        { "Credits" = "credits.md" },
+        { "License" = "license.md" },
+    ]},
+    { "API reference" = "reference/api.md" },
+{%- if include_notebooks %}
+    { "Notebooks" = "notebooks.md" },
+{%- endif %}
+    { "Development" = [
+        { "Contributing" = "contributing.md" },
+        { "Coverage report" = "coverage.md" },
+    ]},
+]
+
+[project.validation]
+omitted_files = "warn"
+absolute_links = "warn"
+unrecognized_links = "warn"
+
+[project.theme]
+name = "material"
+custom_dir = "docs/.overrides"
+features = [
+    "announce.dismiss",
+    "content.action.edit",
+    "content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.instant.preview",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "search.highlight",
+    "search.suggest",
+    "toc.follow",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "teal"
+accent = "purple"
+toggle = { icon = "material/weather-sunny", name = "Switch to dark mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "black"
+accent = "lime"
+toggle = { icon = "material/weather-night", name = "Switch to system preference" }
+
+extra_css = ["css/material.css", "css/mkdocstrings.css"]
+extra_javascript = ["js/feedback.js"]
+
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.callouts]
+[project.markdown_extensions.footnotes]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions.pymdownx.magiclink]
+
+[project.markdown_extensions.pymdownx.snippets]
+base_path = ["."]
+check_paths = true
+
+[project.markdown_extensions.pymdownx.superfences]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.plugins.search]
+[project.plugins.autorefs]
+[project.plugins.markdown-exec]
+[project.plugins.section-index]
+[project.plugins.coverage]
+
+[project.plugins.mkdocstrings]
+handlers = { python = { inventories = ["https://docs.python.org/3/objects.inv"], paths = ["src"] } }
+
+[project.plugins.mkdocstrings.handlers.python.options]
+backlinks = "tree"
+docstring_section_style = "list"
+filters = ["!^_"]
+heading_level = 1
+inherited_members = true
+merge_init_into_class = true
+separate_signature = true
+show_root_heading = true
+show_root_full_path = false
+show_signature_annotations = true
+show_source = true
+show_symbol_type_heading = true
+show_symbol_type_toc = true
+signature_crossrefs = true
+summary = true
+
+[project.plugins.mkdocstrings.handlers.python.options.docstring_options]
+ignore_init_summary = true
+
+[project.plugins.llmstxt]
+full_output = "llms-full.txt"
+
+[project.plugins.llmstxt.sections]
+Usage = ["index.md"]
+API = ["reference/api.md"]
+
+[project.plugins.git-revision-date-localized]
+enabled = false
+enable_creation_date = true
+type = "timeago"
+
+[project.plugins.minify]
+minify_html = false
+
+[project.plugins.typeset]
+
+[project.extra.analytics.feedback]
+title = "Was this page helpful?"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-happy-outline"
+name = "This page was helpful"
+data = 1
+note = "Thanks for your feedback!"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-sad-outline"
+name = "This page could be improved"
+data = 0
+note = "Let us know how we can improve this page."
