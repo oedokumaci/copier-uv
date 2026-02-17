@@ -8,7 +8,7 @@ An AI-native [Copier](https://github.com/copier-org/copier) template for Python 
 ## Features
 
 - **Claude Code integration** -- every generated project includes a `CLAUDE.md` with project-aware guidance and custom skills (`/commit`, `/release`, `/review-pr`, `/docs-deploy`) so AI assistants understand your codebase from day one
-- **Cursor IDE support** -- `.cursorrules` symlink to `CLAUDE.md` for seamless Cursor integration
+- **Cursor IDE support** -- full `.cursor/` directory with always-apply rules pointing to `CLAUDE.md` and skills symlinked from `.claude/skills/`, so Claude Code and Cursor share the same AI context
 - **Modern Python toolchain** -- [uv](https://github.com/astral-sh/uv) for dependency management, [Ruff](https://github.com/charliermarsh/ruff) for formatting and linting, [ty](https://github.com/astral-sh/ty) for type checking
 - **Task runner** -- [taskipy](https://github.com/taskipy/taskipy) tasks for every workflow: `fix`, `ci`, `test`, `docs`, `changelog`, `profile`, and more
 - **Pre-commit hooks** -- pre-configured Ruff formatting and linting hooks

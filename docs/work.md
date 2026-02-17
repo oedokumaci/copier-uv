@@ -6,7 +6,13 @@ The generated project has this structure:
 📁 your_project ------------------- # your freshly created project!
 ├── 📄 CHANGELOG.md --------------- #
 ├── 📄 CLAUDE.md ------------------ # AI assistant guidance
-├── 📄 .cursorrules --------------- # symlink to CLAUDE.md (for Cursor IDE)
+├── 📁 .claude -------------------- # Claude Code configuration
+│   └── 📁 skills ----------------- # Claude Code skills (/commit, /fix, etc.)
+├── 📁 .cursor -------------------- # Cursor IDE configuration
+│   ├── 📁 rules ------------------ # Cursor rules (always-apply → CLAUDE.md)
+│   │   └── 📄 project.mdc ------- #
+│   └── 📁 skills → .claude/skills  # symlink for Cursor skill discovery
+├── 📄 .cursorrules → CLAUDE.md --- # legacy symlink (deprecated)
 ├── 📄 .pre-commit-config.yaml ---- # pre-commit hooks configuration
 ├── 📁 config --------------------- # tools configuration files
 │   ├── 📄 coverage.ini ----------- #
@@ -50,6 +56,24 @@ The generated project has this structure:
     ├── 📄 __init__.py ------------ #
     └── 📄 test_main.py ----------- # tests for main entry point
 ```
+
+## AI Integration
+
+Every generated project ships with first-class support for **Claude Code** and **Cursor IDE**. A single `CLAUDE.md` file serves as the source of truth for AI context, with both tools configured to read from it automatically.
+
+### Claude Code
+
+- **`CLAUDE.md`** — project-aware guidance loaded automatically by Claude Code
+- **`.claude/skills/`** — custom skills invokable with `/commit`, `/fix`, `/test`, `/pr`, `/release`, `/review`
+
+### Cursor IDE
+
+- **`.cursor/rules/project.mdc`** — always-apply rule that references `CLAUDE.md` via `@CLAUDE.md`
+- **`.cursor/skills/`** — symlink to `.claude/skills/` so Cursor discovers the same skills
+- **`.cursorrules`** — legacy symlink to `CLAUDE.md` (deprecated, kept for backward compatibility)
+- **`config/vscode/`** — shared VSCode/Cursor settings (formatter, linter, debug configs)
+
+This means you maintain one set of AI instructions (`CLAUDE.md` + `.claude/skills/`) and both Claude Code and Cursor use them seamlessly.
 
 ## Environment
 
