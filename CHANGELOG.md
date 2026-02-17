@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.11.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.11.0) - 2026-02-18
+
+<small>[Compare with 0.10.1](https://github.com/oedokumaci/copier-uv/compare/0.10.1...0.11.0)</small>
+
+### Features
+
+- Add release taskipy task for automated releases ([9993f76](https://github.com/oedokumaci/copier-uv/commit/9993f765506946a07d4c82769c69e8501748b6b6) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+- Add pre-commit convenience task to pyproject.toml ([3669c70](https://github.com/oedokumaci/copier-uv/commit/3669c706cbc0e50ef3a4bbc684de87cac9585cad) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+### Bug Fixes
+
+- Add --vcs-ref HEAD to copier copy commands to bypass cache ([b4369b8](https://github.com/oedokumaci/copier-uv/commit/b4369b8a1223039a7fe01fc7f67a5127dbe66c1b) by oedokumaci).
+
 ## [0.10.1](https://github.com/oedokumaci/copier-uv/releases/tag/0.10.1) - 2026-02-18
 
 <small>[Compare with 0.10.0](https://github.com/oedokumaci/copier-uv/compare/0.10.0...0.10.1)</small>
