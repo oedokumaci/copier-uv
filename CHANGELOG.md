@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.7.4](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.4) - 2026-02-18
+
+<small>[Compare with 0.7.3](https://github.com/oedokumaci/copier-uv/compare/0.7.3...0.7.4)</small>
+
+### Bug Fixes
+
+- Default repository provider to github.com without prompting ([bc8dd45](https://github.com/oedokumaci/copier-uv/commit/bc8dd4597e4ed3c69c8d29b0a20134d7c89f0c50) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.7.3](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.3) - 2026-02-17
 
 <small>[Compare with 0.7.2](https://github.com/oedokumaci/copier-uv/compare/0.7.2...0.7.3)</small>
