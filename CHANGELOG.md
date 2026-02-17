@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.13.1](https://github.com/oedokumaci/copier-uv/releases/tag/0.13.1) - 2026-02-18
+
+<small>[Compare with 0.13.0](https://github.com/oedokumaci/copier-uv/compare/0.13.0...0.13.1)</small>
+
+### Bug Fixes
+
+- Document copier ref caching behavior and workaround ([13444ab](https://github.com/oedokumaci/copier-uv/commit/13444aba5befdb28cc879acd166bea780c55dc22) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.13.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.13.0) - 2026-02-18
 
 <small>[Compare with 0.12.0](https://github.com/oedokumaci/copier-uv/compare/0.12.0...0.13.0)</small>
