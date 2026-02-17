@@ -1,6 +1,6 @@
 [project]
 site_name = "Copier UV"
-site_description = "Copier template for Python projects managed by uv"
+site_description = "AI-native Copier template for production-ready Python projects"
 site_url = "https://oedokumaci.github.io/copier-uv"
 repo_url = "https://github.com/oedokumaci/copier-uv"
 repo_name = "oedokumaci/copier-uv"
@@ -18,7 +18,6 @@ nav = [
     { "Working on a project" = "work.md" },
     { "Updating a project" = "update.md" },
   ] },
-  { "Original Author" = "https://pawamoy.github.io/" },
 ]
 
 [project.theme]

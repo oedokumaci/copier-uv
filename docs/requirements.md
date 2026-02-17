@@ -15,7 +15,21 @@ To install uv:
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
 
-=== "Windows"
+=== "Windows (WSL recommended)"
+
+    We recommend using [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install) for the best experience:
+
+    ```powershell
+    wsl --install
+    ```
+
+    Then inside WSL, install uv:
+
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
+    Alternatively, install uv natively on Windows:
 
     ```powershell
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
