@@ -18,6 +18,8 @@ _skip_if_exists:
 _tasks:
 - "echo 'Initializing git repository...'"
 - "git init ."
+- "echo 'Installing dependencies...'"
+- "uv sync"
 - "echo 'Installing pre-commit hooks...'"
 - "uvx pre-commit install"
 - "echo ''"
