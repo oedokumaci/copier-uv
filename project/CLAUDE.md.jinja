@@ -27,101 +27,31 @@ uvx --from taskipy task docs     # Serve docs locally
 
 1. **Explore** - Read relevant code first
 2. **Plan** - Ask clarifying questions for architectural changes
-3. **Test First** - Write failing test (TDD)
-4. **Code** - Minimal code to pass test
-5. **Refactor** - Clean up, keep tests green
-6. **Verify** - `uvx --from taskipy task fix && uvx --from taskipy task ci`
+3. **Test First** - Write failing test, then minimal code to pass, then refactor
+4. **Verify** - `uvx --from taskipy task fix && uvx --from taskipy task ci`
 
 **Ask before:** Adding dependencies, changing public API, modifying structure.
-
-## Clean Code (Uncle Bob)
-
-### SOLID Principles
-
-| Principle | Description |
-|-----------|-------------|
-| **S**ingle Responsibility | One reason to change |
-| **O**pen/Closed | Open for extension, closed for modification |
-| **L**iskov Substitution | Subtypes substitutable for base types |
-| **I**nterface Segregation | Specific interfaces > general interfaces |
-| **D**ependency Inversion | Depend on abstractions |
-
-### Guidelines
-
-- **Functions**: Small (<20 lines), do one thing, few args (0-2), no side effects
-- **Classes**: Small, cohesive, encapsulated
-- **General**: DRY, YAGNI, meaningful names, Boy Scout Rule
-
-## TDD (Test-Driven Development)
-
-**Uncle Bob's Three Laws:**
-1. No production code without a failing test
-2. Write only enough test to fail
-3. Write only enough code to pass
-
-**Cycle:** Red -> Green -> Refactor -> Repeat
-
-**Test behavior, not implementation.** Tests verify *what* code does, not *how*.
-
-**FIRST:** **F**ast, **I**ndependent, **R**epeatable, **S**elf-validating, **T**imely
 
 ## Code Style
 
 ### Required in Every File
 
 ```python
-from __future__ import annotations
-
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from collections.abc import Sequence
 ```
 
-### Type Hints (Mandatory)
-
-Every function, method, and variable MUST have type hints.
-
-### Docstrings (Google Style)
-
-```python
-def calculate(prices: list[float], *, tax: float = 0.0) -> float:
-    """Calculate total with tax.
-
-    Parameters:
-        prices: Item prices.
-        tax: Tax rate as decimal.
-
-    Returns:
-        Final total.
-    """
-```
-
-### Ruff Config
-
-- Line length: 120
-- Target: Python {{ python_version }}+
-- Docstrings: Google convention
-- Imports: Absolute only
-
-## Commit Messages
-
-**Format:** `<type>[(scope)]: Subject`
-
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `deps`
-
-**Examples:**
-```
-feat: Add user authentication
-fix(parser): Handle empty input
-```
-
-**Changelog types:** `build`, `deps`, `feat`, `fix`, `refactor`
+- **Type hints**: Mandatory on all functions, methods, and variables
+- **Docstrings**: Google style
+- **Ruff**: Line length 120, Python {{ python_version }}+, absolute imports only
 
 ## Project Structure
 
 ```
 {{ repository_name }}/
+├── .claude/skills/       # Claude Code skills
 ├── src/{{ python_package_import_name }}/
 │   ├── __init__.py       # Public API
 │   ├── __main__.py       # Module entry point (run via `task run`)
@@ -163,29 +93,21 @@ logger.info("Action", user_id=123, action="login")  # Structured data as kwargs
 Use `configure_logging` from `_internal.logging` only to set up handlers.
 Example: `configure_logging(level="INFO", json_logs=False)`
 
-## Available Tasks
+## Skills
 
-Run with `uvx --from taskipy task <name>`:
+Claude Code skills are available in `.claude/skills/`. Invoke with `/skill-name`:
 
-| Task | Description |
-|------|-------------|
-| `run` | Run module entrypoint |
-| `setup` | Install dependencies |
-| `format` | Format code (writes changes) |
-| `lint` | Lint and auto-fix (writes changes) |
-| `fix` | Format + lint auto-fix |
-| `format_check` | Check code formatting (CI) |
-| `lint_check` | Check linting (CI) |
-| `typecheck` | Run type checking |
-| `test` | Run tests with coverage |
-| `test_no_cov` | Run test suite (no coverage) |
-| `ci` | Run all CI checks (format, lint, typecheck, test) |
-| `docs` | Serve documentation locally |
-| `docs_build` | Build documentation (strict) |
-| `changelog` | Update changelog |
-| `clean` | Delete build artifacts and caches |
-| `profile` | Profile module with Scalene |
-| `profile_memory` | Profile module memory with Memray |
+| Skill | Description |
+|-------|-------------|
+| `/commit` | Create well-structured git commits |
+| `/pr` | Create GitHub pull requests |
+| `/test` | Run the test suite |
+| `/fix` | Auto-format and lint code |
+| `/review` | Perform code review |
+{%- if include_notebooks %}
+| `/marimo-notebook` | Write marimo notebooks properly |
+| `/jupyter-to-marimo` | Convert Jupyter notebooks to marimo |
+{%- endif %}
 
 ## Key Files
 
@@ -195,24 +117,3 @@ Run with `uvx --from taskipy task <name>`:
 | `config/ruff.toml` | Linting rules |
 | `config/pytest.ini` | Test configuration |
 | `.pre-commit-config.yaml` | Pre-commit hooks |
-
-## Do's and Don'ts
-
-**DO:**
-- Write tests FIRST (TDD)
-- Keep changes small and modular
-- Test behavior, not implementation
-- Type hints on everything
-- Google-style docstrings
-- `from __future__ import annotations` in every file
-- Absolute imports only
-- Run `uvx --from taskipy task fix && uvx --from taskipy task ci`
-
-**DON'T:**
-- Production code without failing test
-- Test implementation details
-- Push/release/deploy (user handles)
-- Skip type hints
-- Relative imports
-- `print()` for debugging (use `logger`)
-- `print()` for logging (use `logger`)
