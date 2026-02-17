@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.9.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.9.0) - 2026-02-18
+
+<small>[Compare with 0.8.0](https://github.com/oedokumaci/copier-uv/compare/0.8.0...0.9.0)</small>
+
+### Features
+
+- Add uv sync to copier post-generation tasks ([4a79353](https://github.com/oedokumaci/copier-uv/commit/4a7935396b4b8b73be157b9bbd54facc805b4c15) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.8.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.8.0) - 2026-02-18
 
 <small>[Compare with 0.7.4](https://github.com/oedokumaci/copier-uv/compare/0.7.4...0.8.0)</small>
