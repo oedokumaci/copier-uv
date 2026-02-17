@@ -49,10 +49,9 @@ author_username:
 
 repository_provider:
   type: str
-  help: Your repository provider
+  help: Your repository provider (defaults to github.com)
   default: github.com
-  choices:
-  - github.com
+  when: false
 
 repository_namespace:
   type: str
