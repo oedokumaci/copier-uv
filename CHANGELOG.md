@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.5.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.5.0) - 2026-02-17
+
+<small>[Compare with 0.4.5](https://github.com/oedokumaci/copier-uv/compare/0.4.5...0.5.0)</small>
+
+### Features
+
+- Add Claude Code skills to project template ([3ec112e](https://github.com/oedokumaci/copier-uv/commit/3ec112e59cdc22e58e6db23d9ecd6b9ee4207c43) by Claude).
+
 ## [0.4.5](https://github.com/oedokumaci/copier-uv/releases/tag/0.4.5) - 2026-01-26
 
 <small>[Compare with 0.4.4](https://github.com/oedokumaci/copier-uv/compare/0.4.4...0.4.5)</small>
