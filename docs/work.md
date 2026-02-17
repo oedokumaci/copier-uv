@@ -182,37 +182,76 @@ uvx --from taskipy task setup
 
 This will install the project's dependencies in a virtual environment (`.venv/`).
 
-Now you can start writing and editing code in `src/your_package`.
+### Development
 
-- Run your application with `uvx --from taskipy task run`.
-- Auto-format and lint-fix the code with `uvx --from taskipy task fix`.
-- Run a quality analysis with `uvx --from taskipy task ci`.
-- Once you wrote tests for your new code,
-  you can run the test suite with `uvx --from taskipy task test`.
-- Once you are ready to publish a new release,
-  run `uvx --from taskipy task changelog`, then tag the commit and push.
-
-To summarize, the typical workflow is:
+The typical development workflow is:
 
 ```bash
-uvx --from taskipy task setup  # only once
+# 1. Create a feature branch
+git switch -c feat/my-feature
 
-<write code>
-uvx --from taskipy task run    # to run your application
+# 2. Write code and tests
+<write code in src/your_package>
+<write tests in tests/>
 
-uvx --from taskipy task fix    # to auto-format and lint-fix
+# 3. Run your application
+uvx --from taskipy task run
 
-<write tests>
-uvx --from taskipy task test   # to run the test suite
+# 4. Auto-format and lint-fix
+uvx --from taskipy task fix
 
-uvx --from taskipy task ci     # to run all CI checks
+# 5. Run all CI checks
+uvx --from taskipy task ci
 
-<commit your changes>
+# 6. Commit your changes (Angular convention)
+git add .
+git commit -m "feat: Add my feature"
 
-uvx --from taskipy task changelog  # to update the changelog
-<edit changelog if needed>
-<commit and tag>
+# 7. (Optional) Clean up commits with interactive rebase
+git rebase -i main
+
+# 8. Push and create a pull request
+git push -u origin feat/my-feature
+gh pr create
 ```
+
+Once the PR is created, have it reviewed (or use the `/review` skill for AI review).
+When approved, merge the PR into `main`.
+
+### Releasing
+
+After merging feature branches, release from `main`:
+
+```bash
+# 1. Switch to main and pull latest changes
+git checkout main
+git pull
+
+# 2. Update the changelog (auto-determines version from commits)
+uvx --from taskipy task changelog
+
+# 3. Review the generated changelog
+<review CHANGELOG.md, edit if needed>
+
+# 4. Update the version in src/your_package/__init__.py
+<edit __version__ = "X.Y.Z" to match the changelog version>
+
+# 5. Commit the release directly to main
+git add .
+git commit -m "chore: Release version X.Y.Z"
+git push
+
+# 6. Tag the version and push the tag
+git tag vX.Y.Z
+git push --tags
+
+# 7. Create a GitHub release
+gh release create vX.Y.Z --generate-notes
+```
+
+!!! tip "Version Consistency"
+    The version in `__init__.py` should match the tag (without the `v` prefix).
+    For example, if `__version__ = "1.2.0"`, the tag should be `v1.2.0`.
 
 ## Quality analysis
 
@@ -338,13 +377,17 @@ Scope and body are optional. Type can be:
 
 ## Releases
 
-To release a new version:
+See the [Releasing](#releasing) section above for the full step-by-step workflow.
+
+In short:
 
 1. Update the changelog: `uvx --from taskipy task changelog`
 2. Review and edit if needed
-3. Commit the changes
-4. Tag with the version: `git tag vX.Y.Z`
-5. Push commits and tags: `git push && git push --tags`
+3. Update `__version__` in `src/your_package/__init__.py`
+4. Commit: `git commit -m "chore: Release version X.Y.Z"`
+5. Tag: `git tag vX.Y.Z`
+6. Push: `git push && git push --tags`
+7. Create release: `gh release create vX.Y.Z --generate-notes`
 
 ## Documentation
 
