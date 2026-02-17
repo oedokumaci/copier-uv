@@ -4,7 +4,7 @@ description: Deploy the documentation site to GitHub Pages. Use when the user as
 ---
 # Docs Deploy Skill
 
-Deploy the copier-uv template documentation to GitHub Pages.
+Deploy the python-production-template documentation to GitHub Pages.
 
 ## Process
 

@@ -40,7 +40,7 @@ And the file looks like this:
 ```yaml
 # Changes here will be overwritten by Copier
 _commit: 0.1.10
-_src_path: gh:oedokumaci/copier-uv
+_src_path: gh:oedokumaci/python-production-template
 author_email: your@email.com
 author_fullname: "Your Name"
 author_username: your-username

@@ -3,7 +3,7 @@
 To generate a project, run the following command:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/python-production-template" /path/to/your/new/project
 ```
 
 !!! warning "Stale template versions"
@@ -11,10 +11,10 @@ uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oe
 
     ```bash
     # Latest commit on the default branch
-    uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/project
+    uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/python-production-template" /path/to/project
 
     # Specific release tag
-    uvx --with copier-templates-extensions copier copy --trust --vcs-ref v0.7.0 "gh:oedokumaci/copier-uv" /path/to/project
+    uvx --with copier-templates-extensions copier copy --trust --vcs-ref v0.7.0 "gh:oedokumaci/python-production-template" /path/to/project
     ```
 
 ## Questions

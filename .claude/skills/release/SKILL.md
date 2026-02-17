@@ -1,10 +1,10 @@
 ---
 name: release
-description: Perform a copier-uv template release by updating the changelog, committing, tagging, and pushing. Use when the user asks to release, cut a release, bump the version, or publish a new version.
+description: Perform a python-production-template release by updating the changelog, committing, tagging, and pushing. Use when the user asks to release, cut a release, bump the version, or publish a new version.
 ---
 # Release Skill
 
-Perform a full release for the copier-uv template.
+Perform a full release for the python-production-template.
 
 ## Process
 

@@ -1,9 +1,9 @@
 [project]
-site_name = "Copier UV"
+site_name = "Python Production Template"
 site_description = "AI-native Copier template for production-ready Python projects"
-site_url = "https://oedokumaci.github.io/copier-uv"
-repo_url = "https://github.com/oedokumaci/copier-uv"
-repo_name = "oedokumaci/copier-uv"
+site_url = "https://oedokumaci.github.io/python-production-template"
+repo_url = "https://github.com/oedokumaci/python-production-template"
+repo_name = "oedokumaci/python-production-template"
 extra_css = ["css/custom.css"]
 nav = [
   { "Home" = [

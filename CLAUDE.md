@@ -4,7 +4,7 @@ This file provides guidance for AI assistants working on this **Copier template*
 
 ## Critical Context
 
-**copier-uv** is a [Copier](https://github.com/copier-org/copier) template for generating AI-native Python projects managed by [uv](https://github.com/astral-sh/uv). This is NOT a regular Python project—it's a **Copier template** that generates Python projects. Based on [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv).
+**python-production-template** is a [Copier](https://github.com/copier-org/copier) template for generating AI-native Python projects managed by [uv](https://github.com/astral-sh/uv). This is NOT a regular Python project—it's a **Copier template** that generates Python projects. Based on [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv).
 
 ### Key Implications
 
@@ -47,7 +47,7 @@ make docs  # or: uv run zensical serve
 ## Repository Structure
 
 ```
-copier-uv/
+python-production-template/
 ├── copier.yml       # Template config, prompts, variables
 ├── extensions.py    # Custom Jinja2 extensions
 ├── project/         # THE TEMPLATE - files that get copied
