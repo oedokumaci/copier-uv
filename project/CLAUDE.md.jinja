@@ -91,8 +91,8 @@ if TYPE_CHECKING:
 └── pyproject.toml        # Metadata, dependencies, and tasks
 ```
 
-- **Public API**: Exports in `__init__.py`
-- **Internal**: `_internal/` - not for external use
+- **Public API**: Exports in `__init__.py` — always import from here (e.g., `from {{ python_package_import_name }} import configure_logging`)
+- **Internal**: `_internal/` - private implementation, never import from `_internal` directly
 - **CLI**: `__main__.py` entry point calls `_internal/cli.py`
 {% if include_notebooks %}
 ## Notebooks
@@ -115,7 +115,7 @@ from loguru import logger
 logger.info("Action", user_id=123, action="login")  # Structured data as kwargs
 ```
 
-Use `configure_logging` from `_internal.logging` only to set up handlers.
+Use `configure_logging` (from `{{ python_package_import_name }}`) to set up handlers.
 Example: `configure_logging(level="INFO", json_logs=False)`
 
 ## Skills

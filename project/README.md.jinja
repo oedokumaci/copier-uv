@@ -23,7 +23,7 @@ pip install git+https://{{ repository_provider }}/{{ repository_namespace }}/{{ 
 ## Logging
 
 - Uses [loguru](https://github.com/Delgan/loguru) with JSON output to stderr by default (no log file is written unless you ask for one).
-- Programmatic control: `from {{ python_package_import_name }}._internal.logging import configure_logging` to customize level, JSON/human format, and optional `log_file`.
+- Programmatic control: `from {{ python_package_import_name }} import configure_logging` to customize level, JSON/human format, and optional `log_file`.
 
 ## Developer Workflow
 
