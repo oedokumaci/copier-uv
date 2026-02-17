@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.8.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.8.0) - 2026-02-18
+
+<small>[Compare with 0.7.4](https://github.com/oedokumaci/copier-uv/compare/0.7.4...0.8.0)</small>
+
+### Features
+
+- Rebrand as AI-native template with feature showcase ([a2b8f3a](https://github.com/oedokumaci/copier-uv/commit/a2b8f3abf0ce8daecc6753d4987a6639cdb2de0c) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+### Bug Fixes
+
+- Improve copyright holder help text to suggest company names ([fa0c7c4](https://github.com/oedokumaci/copier-uv/commit/fa0c7c4939a7bba3a2f99f85520fdc2ce95241e9) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.7.4](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.4) - 2026-02-18
 
 <small>[Compare with 0.7.3](https://github.com/oedokumaci/copier-uv/compare/0.7.3...0.7.4)</small>
