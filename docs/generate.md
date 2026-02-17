@@ -239,3 +239,5 @@ Run `uvx --from taskipy task --list` to show the available tasks.
 ```
 
 The project includes an initialized git repository. See the next chapter to learn how to work on this new project.
+
+Once the template evolves with new features or fixes, you can pull those changes into your project. See [Updating a project](update.md) for the update command.
