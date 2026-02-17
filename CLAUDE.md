@@ -4,9 +4,7 @@ This file provides guidance for AI assistants working on this **Copier template*
 
 ## Critical Context
 
-**copier-uv** is a [Copier](https://github.com/copier-org/copier) template for generating Python projects managed by [uv](https://github.com/astral-sh/uv). This is NOT a regular Python project—it's a **Copier template** that generates Python projects.
-
-> **Credits**: Fork of [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv) by [Timothée Mazzucotelli](https://pawamoy.github.io/). Maintain the spirit and quality of the original work.
+**copier-uv** is a [Copier](https://github.com/copier-org/copier) template for generating AI-native Python projects managed by [uv](https://github.com/astral-sh/uv). This is NOT a regular Python project—it's a **Copier template** that generates Python projects. Based on [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv).
 
 ### Key Implications
 
