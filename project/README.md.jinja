@@ -32,7 +32,7 @@ pip install git+https://{{ repository_provider }}/{{ repository_namespace }}/{{ 
 ```bash
 git clone https://{{ repository_provider }}/{{ repository_namespace }}/{{ repository_name }}
 cd {{ repository_name }}
-make setup
+uv sync
 ```
 
 ### Development Cycle
@@ -61,9 +61,9 @@ make setup
 4. **Run quality checks**
 
     ```bash
-    make format  # Auto-format code
-    make check   # Run all quality checks (lint, types, docs, API)
-    make test    # Run test suite
+    uvx --from taskipy task format  # Auto-format code
+    uvx --from taskipy task ci      # Run all quality checks (format, lint, types, test)
+    uvx --from taskipy task test    # Run test suite only
     ```
 
 5. **Open a Pull Request** — prefer **rebase merge** to keep a clean history
@@ -76,12 +76,11 @@ After merging PRs:
 git switch main
 git pull
 
-make changelog   # Update CHANGELOG.md with new entries
-make coverage    # Generate coverage report
+uvx --from taskipy task changelog   # Update CHANGELOG.md with new entries
 
 # Check the changelog for the new version (x.y.z), then:
-make release version=x.y.z
+uvx --from taskipy task release -- x.y.z
 
 # Verify the updated documentation locally:
-make docs
+uvx --from taskipy task docs
 ```
