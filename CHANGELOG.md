@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.7.3](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.3) - 2026-02-17
+
+<small>[Compare with 0.7.2](https://github.com/oedokumaci/copier-uv/compare/0.7.2...0.7.3)</small>
+
+### Bug Fixes
+
+- Address review issues in upstream migration PR ([8506149](https://github.com/oedokumaci/copier-uv/commit/8506149af9e6b3ef10bce92fb1db1254688f98bb) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
+### Code Refactoring
+
+- Switch from MkDocs to Zensical for documentation ([af1f1d8](https://github.com/oedokumaci/copier-uv/commit/af1f1d8a1c462f625327a90854b54ce0775d628b) by Claude).
+- Overhaul Ruff config with select ALL and modernize gen_credits ([4e342ce](https://github.com/oedokumaci/copier-uv/commit/4e342ce3c21b019b9932661346aac4b2804d690c) by Claude).
+- Complete mypy-to-ty migration ([77e8117](https://github.com/oedokumaci/copier-uv/commit/77e8117cc20cbd5b587c6a64303f96eca04aeec2) by Claude).
+
 ## [0.7.2](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.2) - 2026-02-17
 
 <small>[Compare with 0.7.1](https://github.com/oedokumaci/copier-uv/compare/0.7.1...0.7.2)</small>
