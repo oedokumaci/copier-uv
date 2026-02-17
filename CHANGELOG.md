@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.7.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.7.0) - 2026-02-17
+
+<small>[Compare with 0.6.0](https://github.com/oedokumaci/copier-uv/compare/0.6.0...0.7.0)</small>
+
+### Features
+
+- Add /docs-deploy skill for publishing docs to GitHub Pages ([d5c39a8](https://github.com/oedokumaci/copier-uv/commit/d5c39a848c18fe0183fd4b28aba27ab3a1355337) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.6.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.6.0) - 2026-02-17
 
 <small>[Compare with 0.5.0](https://github.com/oedokumaci/copier-uv/compare/0.5.0...0.6.0)</small>
