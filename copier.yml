@@ -66,7 +66,7 @@ repository_name:
 
 copyright_holder:
   type: str
-  help: The name of the person/entity holding the copyright
+  help: The name of the person/entity holding the copyright (your name or company/organization name)
   default: "{{ author_fullname }}"
 
 copyright_holder_email:
