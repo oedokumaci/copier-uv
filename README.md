@@ -26,7 +26,7 @@ An AI-native [Copier](https://github.com/copier-org/copier) template for Python 
 Make sure you have [Git](https://git-scm.com/) and [uv](https://docs.astral.sh/uv/) installed, then:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier-uv" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
 
 See the [documentation](https://oedokumaci.github.io/copier-uv) for the full guide.
