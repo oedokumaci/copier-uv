@@ -17,7 +17,7 @@ Deploy the copier-uv template documentation to GitHub Pages.
    ```bash
    make docs-deploy
    ```
-   This runs `mkdocs gh-deploy`, which builds the docs and pushes them to the `gh-pages` branch.
+   This builds the docs with Zensical and pushes them to the `gh-pages` branch via `ghp-import`.
 
 3. Inform the user the docs have been deployed.
 
