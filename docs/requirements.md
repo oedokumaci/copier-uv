@@ -9,9 +9,17 @@ To install Git version 2, [follow the official instructions](https://git-scm.com
 
 To install uv:
 
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+=== "Linux/macOS"
+
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
+=== "Windows"
+
+    ```powershell
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    ```
 
 To install Python with uv:
 
