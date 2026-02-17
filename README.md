@@ -39,6 +39,16 @@ uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier
 
 See the [documentation](https://oedokumaci.github.io/copier-uv) for more details.
 
+### Updating an existing project
+
+To pull in the latest template changes to an already-generated project:
+
+```bash
+uvx --with copier-templates-extensions copier update --trust --vcs-ref HEAD --defaults
+```
+
+See the [update documentation](https://oedokumaci.github.io/copier-uv/update) for details.
+
 ## Acknowledgements
 
 This project is based on [copier-uv](https://github.com/pawamoy/copier-uv) by [Timothée Mazzucotelli (pawamoy)](https://pawamoy.github.io/).
