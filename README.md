@@ -3,47 +3,34 @@
 [![ci](https://github.com/oedokumaci/copier-uv/workflows/ci/badge.svg)](https://github.com/oedokumaci/copier-uv/actions?query=workflow%3Aci)
 [![documentation](https://img.shields.io/badge/docs-zensical-blue.svg?style=flat)](https://oedokumaci.github.io/copier-uv/)
 
-[Copier](https://github.com/copier-org/copier) template for Python projects managed by [uv](https://github.com/astral-sh/uv).
-
-> **Credits**: This template is a fork of [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv) by [Timothée Mazzucotelli](https://pawamoy.github.io/). Full credit to the original author for the excellent foundation.
+An AI-native [Copier](https://github.com/copier-org/copier) template for Python projects managed by [uv](https://github.com/astral-sh/uv). Ships with deep Claude Code integration, a modern toolchain, and a batteries-included development workflow so you can go from `copier copy` to production-ready in minutes.
 
 ## Features
 
-- [uv](https://github.com/astral-sh/uv) setup, with pre-defined `pyproject.toml`
-- Pre-configured tools for code formatting, quality, and type checking: [ruff](https://github.com/charliermarsh/ruff), [ty](https://github.com/astral-sh/ty)
-- Tests run with [pytest](https://github.com/pytest-dev/pytest) and plugins, with [coverage](https://github.com/nedbat/coveragepy) support
-- Documentation built with [Zensical](https://zensical.org/) and [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)
-- Cross-platform tasks with [taskipy](https://github.com/taskipy/taskipy)
-- Support for GitHub workflows
-- Auto-generated `CHANGELOG.md` from Git (conventional) commits
-- All licenses from [choosealicense.com](https://choosealicense.com/appendix/)
+- **Claude Code integration** -- every generated project includes a `CLAUDE.md` with project-aware guidance and custom skills (`/commit`, `/release`, `/review-pr`, `/docs-deploy`) so AI assistants understand your codebase from day one
+- **Cursor IDE support** -- `.cursorrules` symlink to `CLAUDE.md` for seamless Cursor integration
+- **Modern Python toolchain** -- [uv](https://github.com/astral-sh/uv) for dependency management, [Ruff](https://github.com/charliermarsh/ruff) for formatting and linting, [ty](https://github.com/astral-sh/ty) for type checking
+- **Task runner** -- [taskipy](https://github.com/taskipy/taskipy) tasks for every workflow: `fix`, `ci`, `test`, `docs`, `changelog`, `profile`, and more
+- **Pre-commit hooks** -- pre-configured Ruff formatting and linting hooks
+- **CI/CD** -- GitHub Actions workflow for format checking, linting, type checking, and testing
+- **Documentation site** -- [Zensical](https://zensical.org/) with [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) for auto-generated API docs
+- **CLI support** -- `__main__.py` entry point with argument parsing out of the box
+- **Structured logging** -- [loguru](https://github.com/Delgan/loguru) with JSON output
+- **Optional marimo notebooks** -- interactive [marimo](https://marimo.io/) notebooks for data science workflows
+- **Auto-generated changelog** -- conventional commits parsed by [git-changelog](https://github.com/pawamoy/git-changelog)
+- **All open-source licenses** -- every license from [choosealicense.com](https://choosealicense.com/appendix/)
+- **Smart defaults** -- git email and username auto-detected from your git config
 
-### Additional Features (this fork)
+## Quick Start
 
-- **CLI support** with `__main__.py` entry point (run via `uvx --from taskipy task run`)
-- **[marimo](https://marimo.io/) notebooks** support (use `uv run marimo`)
-- **[loguru](https://github.com/Delgan/loguru)** for structured JSON logging
-- **CLAUDE.md** for AI assistant guidance
-- **Cursor IDE integration** via `.cursorrules` symlink (points to `CLAUDE.md`)
-- **Smart defaults** for author info:
-  - Git email defaults to your git config `user.email` value.
-  - Git username defaults to your git config `user.name` value.
-
-## Quick setup and usage
-
-Make sure all the [requirements](https://oedokumaci.github.io/copier-uv/requirements) are met, then:
+Make sure you have [Git](https://git-scm.com/) and [uv](https://docs.astral.sh/uv/) installed, then:
 
 ```bash
 uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
 
-See the [documentation](https://oedokumaci.github.io/copier-uv) for more details.
+See the [documentation](https://oedokumaci.github.io/copier-uv) for the full guide.
 
-## Acknowledgements
+## Credits
 
-This project is based on [copier-uv](https://github.com/pawamoy/copier-uv) by [Timothée Mazzucotelli (pawamoy)](https://pawamoy.github.io/).
-
-Similar templates by the original author:
-
-- [copier-pdm](https://github.com/pawamoy/copier-pdm), with [PDM](https://github.com/pdm-project/pdm)
-- [copier-poetry](https://github.com/pawamoy/copier-poetry), with [Poetry](https://github.com/python-poetry/poetry)
+Based on [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv) by Timothee Mazzucotelli.
