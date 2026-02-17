@@ -84,18 +84,18 @@ run = { cmd = "uv run python -m {module}", help = "Run module entrypoint" }
 setup = { cmd = "uv sync", help = "Install dependencies" }
 
 # Always write changes
-format = { cmd = "uvx ruff format {all}", help = "Format code (writes changes)" }
-lint = { cmd = "uvx ruff check --fix {all}", help = "Lint and auto-fix (writes changes)" }
+format = { cmd = "uvx ruff format --config=config/ruff.toml {all}", help = "Format code (writes changes)" }
+lint = { cmd = "uvx ruff check --config=config/ruff.toml --fix {all}", help = "Lint and auto-fix (writes changes)" }
 
 # Convenience: run both
 fix = { cmd = "task format && task lint", help = "Format + lint auto-fix" }
 
 # Quality checks (read-only, for CI)
-format_check = { cmd = "uvx ruff format --check {all}", help = "Check code formatting (CI)" }
-lint_check = { cmd = "uvx ruff check {all}", help = "Check linting (CI)" }
+format_check = { cmd = "uvx ruff format --config=config/ruff.toml --check {all}", help = "Check code formatting (CI)" }
+lint_check = { cmd = "uvx ruff check --config=config/ruff.toml {all}", help = "Check linting (CI)" }
 typecheck = { cmd = "uvx ty check --config-file=config/ty.toml {src}", help = "Run type checking" }
-test = { cmd = "uv run pytest {tests} --cov={src} --cov-report=html --cov-report=term", help = "Run tests with coverage" }
-test_no_cov = { cmd = "uv run pytest {tests}", help = "Run test suite" }
+test = { cmd = "uv run pytest -c config/pytest.ini {tests} --cov={src} --cov-report=html --cov-report=term", help = "Run tests with coverage" }
+test_no_cov = { cmd = "uv run pytest -c config/pytest.ini {tests}", help = "Run test suite" }
 
 # CI: all checks in one command (read-only)
 ci = { cmd = "task format_check && task lint_check && task typecheck && task test", help = "Run all CI checks (format, lint, typecheck, test)" }

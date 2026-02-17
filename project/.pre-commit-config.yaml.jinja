@@ -7,21 +7,14 @@ repos:
     hooks:
       - id: format
         name: Format code
-        entry: uvx ruff format src tests
+        entry: uvx ruff format --config=config/ruff.toml src tests
         language: system
         types: [python]
         pass_filenames: false
 
       - id: lint
         name: Lint code
-        entry: uvx ruff check --fix src tests
-        language: system
-        types: [python]
-        pass_filenames: false
-
-      - id: typecheck
-        name: Type check
-        entry: uvx ty check src
+        entry: uvx ruff check --config=config/ruff.toml --fix src tests
         language: system
         types: [python]
         pass_filenames: false
