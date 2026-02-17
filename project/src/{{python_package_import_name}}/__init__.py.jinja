@@ -7,6 +7,7 @@ from __future__ import annotations
 
 from {{ python_package_import_name }}._internal.cli import main
 from {{ python_package_import_name }}._internal.logging import configure_logging
+from {{ python_package_import_name }}._internal.path import DATA_DIR, PACKAGE_DIR
 
 __version__ = "0.0.0"
-__all__: list[str] = ["configure_logging", "main"]
+__all__: list[str] = ["DATA_DIR", "PACKAGE_DIR", "configure_logging", "main"]
