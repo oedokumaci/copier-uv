@@ -34,7 +34,7 @@
 Make sure all the [requirements](https://oedokumaci.github.io/copier-uv/requirements) are met, then:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier-uv" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
 
 See the [documentation](https://oedokumaci.github.io/copier-uv) for more details.

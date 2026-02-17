@@ -3,7 +3,7 @@
 To generate a project, run the following command:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier-uv" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
 
 ## Questions
