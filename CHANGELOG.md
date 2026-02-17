@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.15.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.15.0) - 2026-02-18
+
+<small>[Compare with 0.14.0](https://github.com/oedokumaci/copier-uv/compare/0.14.0...0.15.0)</small>
+
+### Features
+
+- Remove original author tab and add WSL instructions ([514f42e](https://github.com/oedokumaci/copier-uv/commit/514f42e4262f10ca6164db5fa47c7c8156fb3b10) by oedokumaci).
+
 ## [0.14.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.14.0) - 2026-02-18
 
 <small>[Compare with 0.13.1](https://github.com/oedokumaci/copier-uv/compare/0.13.1...0.14.0)</small>
