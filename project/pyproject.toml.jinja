@@ -102,6 +102,7 @@ docs_build = { cmd = "uv run zensical build --clean --strict", help = "Build doc
 changelog = { cmd = "uvx --with 'packaging<26' git-changelog --bump auto && echo '\nRemember to update __version__ in src/{{ python_package_import_name }}/__init__.py'", help = "Update changelog" }
 
 # Utilities
+pre_commit = { cmd = "uvx pre-commit run --all-files", help = "Run all pre-commit hooks" }
 clean = { cmd = "rm -rf build dist htmlcov site .coverage* .pytest_cache .ruff_cache __pycache__ .venvs .venv", help = "Delete build artifacts and caches" }
 
 # Profiling (using module variable)
