@@ -99,7 +99,7 @@ docs = { cmd = "uv run zensical serve", help = "Serve documentation locally" }
 docs_build = { cmd = "uv run zensical build --clean --strict", help = "Build documentation (strict)" }
 
 # Release
-changelog = { cmd = "uvx --with 'packaging<26' git-changelog --bump auto", help = "Update changelog" }
+changelog = { cmd = "uvx --with 'packaging<26' git-changelog --bump auto && echo '\\nRemember to update __version__ in src/{{ python_package_import_name }}/__init__.py'", help = "Update changelog" }
 
 # Utilities
 pre_commit = { cmd = "uvx pre-commit run --all-files", help = "Run all pre-commit hooks" }
