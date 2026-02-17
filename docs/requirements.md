@@ -22,5 +22,5 @@ uv python install 3.X  # Replace X with your desired version, e.g., 3.12
 Then generate a project with:
 
 ```bash
-uvx --with copier-templates-extensions copier copy --trust "gh:oedokumaci/copier-uv" /path/to/your/new/project
+uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
