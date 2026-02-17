@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.10.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.10.0) - 2026-02-18
+
+<small>[Compare with 0.9.0](https://github.com/oedokumaci/copier-uv/compare/0.9.0...0.10.0)</small>
+
+### Features
+
+- Add version reminder echo to changelog task ([2f54e08](https://github.com/oedokumaci/copier-uv/commit/2f54e081e8ce6aa7ff98d07848fad3f2694fd9dd) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.9.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.9.0) - 2026-02-18
 
 <small>[Compare with 0.8.0](https://github.com/oedokumaci/copier-uv/compare/0.8.0...0.9.0)</small>
