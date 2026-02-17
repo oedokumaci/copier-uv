@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.13.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.13.0) - 2026-02-18
+
+<small>[Compare with 0.12.0](https://github.com/oedokumaci/copier-uv/compare/0.12.0...0.13.0)</small>
+
+### Features
+
+- Add comprehensive option combination tests ([0537ffb](https://github.com/oedokumaci/copier-uv/commit/0537ffb7ec3fe9e6fda0dbbcacf85c8c0b534010) by oedokumaci). Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+
 ## [0.12.0](https://github.com/oedokumaci/copier-uv/releases/tag/0.12.0) - 2026-02-18
 
 <small>[Compare with 0.11.3](https://github.com/oedokumaci/copier-uv/compare/0.11.3...0.12.0)</small>
