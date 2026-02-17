@@ -15,12 +15,13 @@ This file provides guidance for AI assistants working on this codebase.
 ## Quick Reference
 
 ```bash
-uvx --from taskipy task setup    # Install dependencies
-uvx --from taskipy task run      # Run the application
-uvx --from taskipy task fix      # Auto-format + lint fix
-uvx --from taskipy task ci       # Run all CI checks (format, lint, typecheck, test)
-uvx --from taskipy task test     # Run tests
-uvx --from taskipy task docs     # Serve docs locally
+uvx --from taskipy task setup        # Install dependencies
+uvx --from taskipy task run          # Run the application
+uvx --from taskipy task fix          # Auto-format + lint fix
+uvx --from taskipy task ci           # Run all CI checks (format, lint, typecheck, test)
+uvx --from taskipy task test         # Run tests
+uvx --from taskipy task docs         # Serve docs locally
+uvx --from taskipy task changelog    # Update changelog (for releases)
 ```
 
 ## Standard Workflow
@@ -31,6 +32,30 @@ uvx --from taskipy task docs     # Serve docs locally
 4. **Verify** - `uvx --from taskipy task fix && uvx --from taskipy task ci`
 
 **Ask before:** Adding dependencies, changing public API, modifying structure.
+
+## Development Workflow
+
+```bash
+git switch -c feat/my-feature             # 1. Create feature branch
+<write code and tests>                    # 2. Implement changes
+uvx --from taskipy task fix               # 3. Auto-format + lint fix
+uvx --from taskipy task ci                # 4. Run all checks
+git add . && git commit -m "feat: ..."    # 5. Commit (Angular convention)
+git rebase -i main                        # 6. (Optional) Clean up commits
+git push -u origin feat/my-feature        # 7. Push branch
+gh pr create                              # 8. Create pull request
+```
+
+## Release Workflow (maintainers)
+
+```bash
+git checkout main && git pull                           # 1. Update main
+uvx --from taskipy task changelog                       # 2. Update CHANGELOG.md
+# edit __version__ in src/{{ python_package_import_name }}/__init__.py
+git add . && git commit -m "chore: Release vX.Y.Z"     # 3. Commit release
+git push && git tag vX.Y.Z && git push --tags           # 4. Tag and push
+gh release create vX.Y.Z --generate-notes               # 5. GitHub release
+```
 
 ## Code Style
 

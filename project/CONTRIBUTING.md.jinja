@@ -52,31 +52,52 @@ See `notebooks/README.md` for more details.
 
 ## Tasks
 
-The entry-point to run commands and tasks is the `make` Python script, located in the `scripts` directory. Try running `make` to show the available commands and tasks. The *commands* do not need the Python dependencies to be installed,
-while the *tasks* do. The cross-platform tasks are written in Python, thanks to [duty](https://github.com/pawamoy/duty).
-
-If you work in VSCode, we provide [an action to configure VSCode](https://oedokumaci.github.io/copier-uv/work/#vscode-setup) for the project.
+Tasks are defined in `pyproject.toml` using [taskipy](https://github.com/taskipy/taskipy).
+Run tasks with `uvx --from taskipy task <name>`. List all available tasks with `uvx --from taskipy task --list`.
 
 ## Development
-
-As usual:
 
 1. create a new branch: `git switch -c feature-or-bugfix-name`
 1. edit the code and/or the documentation
 
 **Before committing:**
 
-1. run `make format` to auto-format the code
-1. run `make check` to check everything (fix any warning)
-1. run `make test` to run the tests (fix any issue)
+1. run `uvx --from taskipy task fix` to auto-format and lint-fix the code
+1. run `uvx --from taskipy task ci` to run all checks (fix any warning)
 1. if you updated the documentation or the project dependencies:
-    1. run `make docs`
+    1. run `uvx --from taskipy task docs`
     1. go to http://localhost:8000 and check that everything looks good
 1. follow our [commit message convention](#commit-message-convention)
+
+**Creating a pull request:**
+
+1. (optional) clean up your commits: `git rebase -i main`
+1. push your branch: `git push -u origin feature-or-bugfix-name`
+1. create the PR: `gh pr create`
+1. have it reviewed (or request an AI review with the `/review` skill)
+1. merge when approved
 
 If you are unsure about how to fix or ignore a warning, just let the continuous integration fail, and we will help you during review.
 
 Don't bother updating the changelog, we will take care of this.
+
+## Release workflow (maintainers)
+
+After merging PRs, release from `main`:
+
+```bash
+git checkout main
+git pull
+uvx --from taskipy task changelog      # auto-update CHANGELOG.md
+# review CHANGELOG.md and edit if needed
+# update __version__ in src/{{ python_package_import_name }}/__init__.py
+git add .
+git commit -m "chore: Release version X.Y.Z"
+git push
+git tag vX.Y.Z
+git push --tags
+gh release create vX.Y.Z --generate-notes
+```
 
 ## Commit message convention
 
