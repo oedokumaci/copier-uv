@@ -6,6 +6,17 @@ To generate a project, run the following command:
 uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/your/new/project
 ```
 
+!!! warning "Stale template versions"
+    Copier caches Git refs and may fetch an older version of the template instead of the latest release. If you are not getting the version you expect, pin the ref explicitly:
+
+    ```bash
+    # Latest commit on the default branch
+    uvx --with copier-templates-extensions copier copy --trust --vcs-ref HEAD "gh:oedokumaci/copier-uv" /path/to/project
+
+    # Specific release tag
+    uvx --with copier-templates-extensions copier copy --trust --vcs-ref v0.7.0 "gh:oedokumaci/copier-uv" /path/to/project
+    ```
+
 ## Questions
 
 *The following examples are not up-to-date, they simply illustrate how the template works.*
