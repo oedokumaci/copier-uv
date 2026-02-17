@@ -8,8 +8,21 @@ Every little bit helps, and credit will always be given.
 You only need two tools, [uv](https://github.com/astral-sh/uv)
 and [Copier](https://github.com/copier-org/copier).
 
+=== "Linux/macOS"
+
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
+=== "Windows"
+
+    ```powershell
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    ```
+
+Then install Copier:
+
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
 uvx copier --with copier-templates-extensions
 ```
 
