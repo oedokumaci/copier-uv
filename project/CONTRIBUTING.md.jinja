@@ -10,7 +10,7 @@ Fork and clone the repository, then:
 
 ```bash
 cd {{ repository_name }}
-make setup
+uvx --from taskipy task setup
 ```
 
 > NOTE: If it fails for some reason, you'll need to install [uv](https://github.com/astral-sh/uv) manually.
@@ -21,11 +21,11 @@ make setup
 > curl -LsSf https://astral.sh/uv/install.sh | sh
 > ```
 >
-> Now you can try running `make setup` again, or simply `uv sync`.
+> Now you can try running `uvx --from taskipy task setup` again, or simply `uv sync`.
 
 You now have the dependencies installed.
 
-Run `make help` to see all the available actions!
+Run `uvx --from taskipy task --list` to see all the available tasks!
 {% if include_notebooks %}
 
 ## Notebooks
@@ -90,7 +90,7 @@ git checkout main
 git pull
 uvx --from taskipy task changelog      # auto-update CHANGELOG.md
 # review CHANGELOG.md and edit if needed
-# update __version__ in src/{{ python_package_import_name }}/__init__.py
+# update __version__ in src/{{ python_package_import_name }}/__init__.py (hatch reads version from here)
 git add .
 git commit -m "chore: Release version X.Y.Z"
 git push

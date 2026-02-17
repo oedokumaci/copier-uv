@@ -59,7 +59,7 @@ and [taskipy](https://github.com/taskipy/taskipy) for task running.
 
 ## Git Repository
 
-This project uses dynamic versioning based on Git tags. The git repository is automatically initialized when you generate the project.
+The version is managed via `__version__` in `src/your_package/__init__.py` (read by [hatch](https://hatch.pypa.io/)). The git repository is automatically initialized when you generate the project.
 
 To add remote, you can do the following:                                        
 
@@ -191,8 +191,7 @@ The typical development workflow is:
 git switch -c feat/my-feature
 
 # 2. Write code and tests
-<write code in src/your_package>
-<write tests in tests/>
+# (edit files in src/your_package and tests/)
 
 # 3. Run your application
 uvx --from taskipy task run
@@ -230,11 +229,9 @@ git pull
 # 2. Update the changelog (auto-determines version from commits)
 uvx --from taskipy task changelog
 
-# 3. Review the generated changelog
-<review CHANGELOG.md, edit if needed>
+# 3. Review the generated changelog, edit if needed
 
-# 4. Update the version in src/your_package/__init__.py
-<edit __version__ = "X.Y.Z" to match the changelog version>
+# 4. Update __version__ in src/your_package/__init__.py (hatch reads version from here)
 
 # 5. Commit the release directly to main
 git add .
@@ -377,7 +374,7 @@ Scope and body are optional. Type can be:
 
 ## Releases
 
-See the [Releasing](#releasing) section above for the full step-by-step workflow.
+See the [Releasing](#releasing) section under Workflow for a detailed step-by-step guide.
 
 In short:
 

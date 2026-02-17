@@ -37,7 +37,7 @@ uvx --from taskipy task changelog    # Update changelog (for releases)
 
 ```bash
 git switch -c feat/my-feature             # 1. Create feature branch
-<write code and tests>                    # 2. Implement changes
+# write code and tests                    # 2. Implement changes
 uvx --from taskipy task fix               # 3. Auto-format + lint fix
 uvx --from taskipy task ci                # 4. Run all checks
 git add . && git commit -m "feat: ..."    # 5. Commit (Angular convention)
@@ -51,7 +51,7 @@ gh pr create                              # 8. Create pull request
 ```bash
 git checkout main && git pull                           # 1. Update main
 uvx --from taskipy task changelog                       # 2. Update CHANGELOG.md
-# edit __version__ in src/{{ python_package_import_name }}/__init__.py
+# update __version__ in src/{{ python_package_import_name }}/__init__.py (hatch reads version from here)
 git add . && git commit -m "chore: Release vX.Y.Z"     # 3. Commit release
 git push && git tag vX.Y.Z && git push --tags           # 4. Tag and push
 gh release create vX.Y.Z --generate-notes               # 5. GitHub release
