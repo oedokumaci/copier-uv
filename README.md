@@ -1,4 +1,14 @@
-# Python Production Template
+# Python Production Template (ARCHIVED)
+
+> **This repository has been archived.** The project has moved to [oedokumaci/python-production-template](https://github.com/oedokumaci/python-production-template).
+>
+> **Why?** This repo was a GitHub fork of [pawamoy/copier-uv](https://github.com/pawamoy/copier-uv), which caused several problems:
+>
+> - **Polluted tag history** — upstream tags (1.0.0–1.11.9) mixed with our own (0.1.0–0.16.0), making version resolution confusing
+> - **Copier `--vcs-ref HEAD` workaround** — the conflicting tags forced users to always pass `--vcs-ref HEAD` to get the correct version, instead of copier just picking up the latest release automatically
+> - **Fork label** — GitHub marked this as a fork rather than an independent project, despite having diverged significantly with AI-native features, a different toolchain, and its own identity
+>
+> The new repository is a clean, independent repo with correct tag history. Use it instead.
 
 [![ci](https://github.com/oedokumaci/python-production-template/workflows/ci/badge.svg)](https://github.com/oedokumaci/python-production-template/actions?query=workflow%3Aci)
 [![documentation](https://img.shields.io/badge/docs-zensical-blue.svg?style=flat)](https://oedokumaci.github.io/python-production-template/)
