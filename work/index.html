@@ -1,0 +1,1798 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI-native Copier template for production-ready Python projects">
+      
+      
+      
+        <link rel="canonical" href="https://oedokumaci.github.io/python-production-template/work/">
+      
+      
+        <link rel="prev" href="../generate/">
+      
+      
+        <link rel="next" href="../update/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.23">
+    
+    
+      
+        <title>Working on a project - Python Production Template</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1e989742.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#working-on-a-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Python Production Template" class="md-header__button md-logo" aria-label="Python Production Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Production Template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Working on a project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/oedokumaci/python-production-template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oedokumaci/python-production-template
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="./.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../requirements/" class="md-tabs__link">
+          
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Python Production Template" class="md-nav__button md-logo" aria-label="Python Production Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg>
+
+    </a>
+    Python Production Template
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oedokumaci/python-production-template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oedokumaci/python-production-template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generating a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working on a project
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working on a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursor-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursor IDE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git Repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies-and-virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencies and virtual environments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-commit-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-commit Hooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releasing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type checking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profiling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updating a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursor-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursor IDE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git Repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies-and-virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dependencies and virtual environments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-commit-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-commit Hooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releasing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quality analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type checking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profiling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Releases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+    <a href="https://github.com/oedokumaci/python-production-template/edit/master/docs/work.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/oedokumaci/python-production-template/raw/master/docs/work.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5M5 16l-3 3 3 3M9 22l3-3-3-3"/></svg>
+    </a>
+  
+
+
+<h1 id="working-on-a-project">Working on a project<a class="headerlink" href="#working-on-a-project" title="Permanent link">&para;</a></h1>
+<p>The generated project has this structure:</p>
+<div class="highlight"><pre><span></span><code>📁 your_project ------------------- # your freshly created project!
+├── 📄 CHANGELOG.md --------------- #
+├── 📄 CLAUDE.md ------------------ # AI assistant guidance
+├── 📁 .claude -------------------- # Claude Code configuration
+│   └── 📁 skills ----------------- # Claude Code skills (/commit, /fix, etc.)
+├── 📁 .cursor -------------------- # Cursor IDE configuration
+│   ├── 📁 rules ------------------ # Cursor rules (always-apply → CLAUDE.md)
+│   │   └── 📄 project.mdc ------- #
+│   └── 📁 skills → .claude/skills  # symlink for Cursor skill discovery
+├── 📄 .cursorrules → CLAUDE.md --- # legacy symlink (deprecated)
+├── 📄 .pre-commit-config.yaml ---- # pre-commit hooks configuration
+├── 📁 config --------------------- # tools configuration files
+│   ├── 📄 coverage.ini ----------- #
+│   ├── 📄 pytest.ini ------------- #
+│   ├── 📄 ruff.toml -------------- #
+│   └── 📁 vscode ----------------- # VSCode/Cursor settings
+│       ├── 📄 launch.json -------- #
+│       ├── 📄 settings.json ------ #
+│       └── 📄 tasks.json --------- #
+├── 📄 CONTRIBUTING.md ------------ #
+├── 📁 docs ----------------------- # documentation pages
+│   ├── 📄 changelog.md ----------- #
+│   ├── 📄 contributing.md -------- #
+│   ├── 📄 credits.md ------------- #
+│   ├── 📁 css -------------------- # extra CSS files
+│   │   └── 📄 apidocs.css -------- #
+│   ├── 📄 index.md --------------- #
+│   ├── 📄 license.md ------------- #
+│   └── 📄 notebooks.md ----------- # (if notebooks enabled)
+├── 📄 LICENSE -------------------- #
+├── 📄 zensical.toml -------------- # docs configuration
+├── 📁 notebooks ------------------ # marimo notebooks (if enabled)
+│   ├── 📄 README.md -------------- #
+│   └── 📄 starter.py ------------- #
+├── 📄 pyproject.toml ------------- # project metadata, dependencies, and tasks
+├── 📄 README.md ------------------ #
+├── 📁 scripts -------------------- # helper scripts
+│   └── 📄 gen_credits.py --------- # script to generate credits
+├── 📁 src ------------------------ # the source code directory
+│   └── 📁 your_package ----------- # your package
+│       ├── 📄 __init__.py -------- # public API exports
+│       ├── 📄 __main__.py -------- # module entry point
+│       ├── 📁 _internal ---------- # internal implementation
+│       │   ├── 📄 __init__.py ---- #
+│       │   ├── 📄 cli.py --------- # CLI implementation
+│       │   ├── 📄 debug.py ------- # debug utilities
+│       │   └── 📄 logging.py ----- # loguru configuration
+│       └── 📄 py.typed ----------- #
+└── 📁 tests ---------------------- # the tests directory
+    ├── 📄 conftest.py ------------ # pytest fixtures, etc.
+    ├── 📄 __init__.py ------------ #
+    └── 📄 test_main.py ----------- # tests for main entry point
+</code></pre></div>
+<h2 id="ai-integration">AI Integration<a class="headerlink" href="#ai-integration" title="Permanent link">&para;</a></h2>
+<p>Every generated project ships with first-class support for <strong>Claude Code</strong> and <strong>Cursor IDE</strong>. A single <code>CLAUDE.md</code> file serves as the source of truth for AI context, with both tools configured to read from it automatically.</p>
+<h3 id="claude-code">Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>CLAUDE.md</code></strong> — project-aware guidance loaded automatically by Claude Code</li>
+<li><strong><code>.claude/skills/</code></strong> — custom skills invokable with <code>/commit</code>, <code>/fix</code>, <code>/test</code>, <code>/pr</code>, <code>/release</code>, <code>/review</code></li>
+</ul>
+<h3 id="cursor-ide">Cursor IDE<a class="headerlink" href="#cursor-ide" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>.cursor/rules/project.mdc</code></strong> — always-apply rule that references <code>CLAUDE.md</code> via <code>@CLAUDE.md</code></li>
+<li><strong><code>.cursor/skills/</code></strong> — symlink to <code>.claude/skills/</code> so Cursor discovers the same skills</li>
+<li><strong><code>.cursorrules</code></strong> — legacy symlink to <code>CLAUDE.md</code> (deprecated, kept for backward compatibility)</li>
+<li><strong><code>config/vscode/</code></strong> — shared VSCode/Cursor settings (formatter, linter, debug configs)</li>
+</ul>
+<p>This means you maintain one set of AI instructions (<code>CLAUDE.md</code> + <code>.claude/skills/</code>) and both Claude Code and Cursor use them seamlessly.</p>
+<h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<p>The project uses <a href="https://github.com/astral-sh/uv">uv</a> for dependency management
+and <a href="https://github.com/taskipy/taskipy">taskipy</a> for task running.</p>
+<h2 id="git-repository">Git Repository<a class="headerlink" href="#git-repository" title="Permanent link">&para;</a></h2>
+<p>The version is managed via <code>__version__</code> in <code>src/your_package/__init__.py</code> (read by <a href="https://hatch.pypa.io/">hatch</a>). The git repository is automatically initialized when you generate the project.</p>
+<p>To add remote, you can do the following:                                        </p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;chore: Initialize repository from template&quot;</span>
+</code></pre></div>
+<p>Then you can create the repository on GitHub using <code>gh</code> CLI:</p>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>repo<span class="w"> </span>create<span class="w"> </span>&lt;org-name/repo-name&gt;<span class="w"> </span>--source<span class="o">=</span>.<span class="w"> </span>--private<span class="w"> </span>--push
+</code></pre></div>
+<h2 id="dependencies-and-virtual-environments">Dependencies and virtual environments<a class="headerlink" href="#dependencies-and-virtual-environments" title="Permanent link">&para;</a></h2>
+<p>Dependencies are managed by <a href="https://github.com/astral-sh/uv">uv</a>.</p>
+<p>Use <code>uv sync</code> to install the dependencies and create the virtual environment.</p>
+<p>Dependencies are written in <code>pyproject.toml</code>. Runtime dependencies are listed under the <code>[project]</code> and <code>[project.optional-dependencies]</code> sections, and development dependencies are listed under the <code>[dependency-groups]</code> section.</p>
+<p>Example:</p>
+<div class="highlight"><span class="filename">pyproject.toml</span><pre><span></span><code><span class="k">[project]</span>
+<span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;fastapi&gt;=1.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;importlib-metadata&gt;=2.0&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="k">[project.optional-dependencies]</span>
+<span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;pytest&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="k">[dependency-groups]</span>
+<span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;pytest&gt;=8.2&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+<h2 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h2>
+<p>Tasks are defined in <code>pyproject.toml</code> using <a href="https://github.com/taskipy/taskipy">taskipy</a>.
+Run tasks with <code>uvx --from taskipy task &lt;name&gt;</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Shell Alias</p>
+<p>For convenience, you can add an alias to your shell configuration (e.g., <code>~/.zshrc</code> or <code>~/.bashrc</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span><span class="w"> </span><span class="nv">t</span><span class="o">=</span><span class="s1">&#39;uvx --from taskipy task&#39;</span>
+</code></pre></div>
+<p>Then run tasks with just <code>t &lt;name&gt;</code>, e.g., <code>t fix</code>, <code>t test</code>, <code>t ci</code>.</p>
+</div>
+<p>List all available tasks:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>--list
+</code></pre></div>
+<p>Available tasks:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>run</code></td>
+<td>Run module entrypoint</td>
+</tr>
+<tr>
+<td><code>setup</code></td>
+<td>Install dependencies</td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td>Format code (writes changes)</td>
+</tr>
+<tr>
+<td><code>lint</code></td>
+<td>Lint and auto-fix (writes changes)</td>
+</tr>
+<tr>
+<td><code>fix</code></td>
+<td>Format + lint auto-fix</td>
+</tr>
+<tr>
+<td><code>format_check</code></td>
+<td>Check code formatting (CI)</td>
+</tr>
+<tr>
+<td><code>lint_check</code></td>
+<td>Check linting (CI)</td>
+</tr>
+<tr>
+<td><code>typecheck</code></td>
+<td>Run type checking</td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td>Run test suite</td>
+</tr>
+<tr>
+<td><code>test_cov</code></td>
+<td>Run tests with coverage</td>
+</tr>
+<tr>
+<td><code>ci</code></td>
+<td>Run all CI checks (format, lint, typecheck, test)</td>
+</tr>
+<tr>
+<td><code>docs</code></td>
+<td>Serve documentation locally</td>
+</tr>
+<tr>
+<td><code>docs_build</code></td>
+<td>Build documentation (strict)</td>
+</tr>
+<tr>
+<td><code>changelog</code></td>
+<td>Update changelog</td>
+</tr>
+<tr>
+<td><code>clean</code></td>
+<td>Delete build artifacts and caches</td>
+</tr>
+<tr>
+<td><code>profile</code></td>
+<td>Profile module with Scalene (CPU, memory, GPU)</td>
+</tr>
+<tr>
+<td><code>profile_memory</code></td>
+<td>Profile module memory with Memray</td>
+</tr>
+<tr>
+<td><code>profile_memory_report</code></td>
+<td>Generate Memray flamegraph report</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pre-commit-hooks">Pre-commit Hooks<a class="headerlink" href="#pre-commit-hooks" title="Permanent link">&para;</a></h2>
+<p>The project includes pre-commit hooks for code quality. Install them with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>pre-commit<span class="w"> </span>install
+</code></pre></div>
+<p>Run hooks manually on all files:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
+</code></pre></div>
+<p>The hooks run:
+- Code formatting with Ruff
+- Linting with Ruff</p>
+<h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Logging uses <a href="https://github.com/Delgan/loguru">loguru</a> and writes to <strong>stderr</strong> by default (JSON format).</li>
+<li>No log file is created unless you explicitly request one:</li>
+<li>Programmatic: <code>configure_logging(log_file=Path("app.log"), json_logs=True, level="INFO")</code></li>
+<li>Console format can be switched to human-readable with <code>json_logs=False</code> when calling <code>configure_logging</code>.</li>
+</ul>
+<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
+<p>The first thing you should run when entering your repository is:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>setup
+</code></pre></div>
+<p>This will install the project's dependencies in a virtual environment (<code>.venv/</code>).</p>
+<h3 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h3>
+<p>The typical development workflow is:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. Create a feature branch</span>
+git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>feat/my-feature
+
+<span class="c1"># 2. Write code and tests</span>
+<span class="c1"># (edit files in src/your_package and tests/)</span>
+
+<span class="c1"># 3. Run your application</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>run
+
+<span class="c1"># 4. Auto-format and lint-fix</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>fix
+
+<span class="c1"># 5. Run all CI checks</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>ci
+
+<span class="c1"># 6. Commit your changes (Angular convention)</span>
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: Add my feature&quot;</span>
+
+<span class="c1"># 7. (Optional) Clean up commits with interactive rebase</span>
+git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>main
+
+<span class="c1"># 8. Push and create a pull request</span>
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>feat/my-feature
+gh<span class="w"> </span>pr<span class="w"> </span>create
+</code></pre></div>
+<p>Once the PR is created, have it reviewed (or use the <code>/review</code> skill for AI review).
+When approved, merge the PR into <code>main</code>.</p>
+<h3 id="releasing">Releasing<a class="headerlink" href="#releasing" title="Permanent link">&para;</a></h3>
+<p>After merging feature branches, release from <code>main</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. Switch to main and pull latest changes</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull
+
+<span class="c1"># 2. Update the changelog (auto-determines version from commits)</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>changelog
+
+<span class="c1"># 3. Review the generated changelog, edit if needed</span>
+
+<span class="c1"># 4. Update __version__ in src/your_package/__init__.py (hatch reads version from here)</span>
+
+<span class="c1"># 5. Commit the release directly to main</span>
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;chore: Release version X.Y.Z&quot;</span>
+git<span class="w"> </span>push
+
+<span class="c1"># 6. Tag the version and push the tag</span>
+git<span class="w"> </span>tag<span class="w"> </span>vX.Y.Z
+git<span class="w"> </span>push<span class="w"> </span>--tags
+
+<span class="c1"># 7. Create a GitHub release</span>
+gh<span class="w"> </span>release<span class="w"> </span>create<span class="w"> </span>vX.Y.Z<span class="w"> </span>--generate-notes
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Version Consistency</p>
+<p>The version in <code>__init__.py</code> should match the tag (without the <code>v</code> prefix).
+For example, if <code>__version__ = "1.2.0"</code>, the tag should be <code>v1.2.0</code>.</p>
+</div>
+<h2 id="quality-analysis">Quality analysis<a class="headerlink" href="#quality-analysis" title="Permanent link">&para;</a></h2>
+<p>The CI checks are started with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>ci
+</code></pre></div>
+<p>This runs format checking, linting, type checking, and tests.</p>
+<p>For individual checks:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>lint<span class="w">      </span><span class="c1"># linting with auto-fix</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>typecheck<span class="w"> </span><span class="c1"># type checking only</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span><span class="nb">test</span><span class="w">      </span><span class="c1"># run tests</span>
+</code></pre></div>
+<h3 id="linting">Linting<a class="headerlink" href="#linting" title="Permanent link">&para;</a></h3>
+<p>Code quality analysis is done with <a href="https://github.com/astral-sh/ruff">Ruff</a>.
+The analysis is configured in <code>config/ruff.toml</code>.
+In this file, you can deactivate rules
+or activate others to customize your analysis.</p>
+<p>You can ignore a rule on a specific code line by appending a <code>noqa</code> comment ("no quality analysis/assurance"):</p>
+<div class="highlight"><span class="filename">src/your_package/module.py</span><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a code line that triggers a Ruff warning&quot;</span><span class="p">)</span>  <span class="c1"># noqa: ID</span>
+</code></pre></div>
+<p>...where ID is the identifier of the rule you want to ignore for this line.</p>
+<h3 id="type-checking">Type checking<a class="headerlink" href="#type-checking" title="Permanent link">&para;</a></h3>
+<p>Type checking is done with <a href="https://github.com/astral-sh/ty">ty</a>.</p>
+<p>If you cannot or don't know how to fix a typing error in your code, as a last resort you can ignore this specific error with a comment:</p>
+<div class="highlight"><span class="filename">src/your_package/module.py</span><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">data_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>  <span class="c1"># ty: ignore[ID]</span>
+</code></pre></div>
+<h2 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">&para;</a></h2>
+<p>Run the test suite with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+<p>Behind the scenes, it uses <a href="https://docs.pytest.org/en/stable/"><code>pytest</code></a> and plugins to collect and run the tests, and output a report.</p>
+<p>For tests with coverage:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>test_cov
+</code></pre></div>
+<h2 id="profiling">Profiling<a class="headerlink" href="#profiling" title="Permanent link">&para;</a></h2>
+<p>Profile your module with various tools:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># CPU, memory, and GPU profiling with Scalene</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>profile
+
+<span class="c1"># Memory profiling with Memray</span>
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>profile_memory
+uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>profile_memory_report<span class="w">  </span><span class="c1"># Generate flamegraph</span>
+</code></pre></div>
+<p>These profiling tasks run your module's <code>__main__.py</code> entry point.</p>
+<h2 id="continuous-integration">Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permanent link">&para;</a></h2>
+<p>The quality checks and tests are executed in parallel in a <a href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions">GitHub Workflow</a>. The CI is configured in <code>.github/workflows/ci.yml</code>.</p>
+<h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h2>
+<p>Changelogs are absolutely useful when your software is updated regularly, to inform your users about the new features that were added or the bugs that were fixed.</p>
+<p>Update the changelog with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>changelog
+</code></pre></div>
+<p>This uses <a href="https://github.com/pawamoy/git-changelog">git-changelog</a> to automatically update the changelog based on your commit messages.</p>
+<p>For this to work properly, use the <a href="https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit">Angular commit message convention</a>.</p>
+<p>For a quick reference:</p>
+<div class="highlight"><pre><span></span><code>&lt;type&gt;[(scope)]: Subject
+
+[Body]
+</code></pre></div>
+<p>Scope and body are optional. Type can be:</p>
+<ul>
+<li><code>build</code>: About packaging, building wheels, etc.</li>
+<li><code>chore</code>: About packaging or repo/files management.</li>
+<li><code>ci</code>: About Continuous Integration.</li>
+<li><code>docs</code>: About documentation.</li>
+<li><code>feat</code>: New feature.</li>
+<li><code>fix</code>: Bug fix.</li>
+<li><code>perf</code>: About performance.</li>
+<li><code>refactor</code>: Changes which are not features nor bug fixes.</li>
+<li><code>style</code>: A change in code style/format.</li>
+<li><code>tests</code>: About tests.</li>
+</ul>
+<h2 id="releases">Releases<a class="headerlink" href="#releases" title="Permanent link">&para;</a></h2>
+<p>See the <a href="#releasing">Releasing</a> section under Workflow for a detailed step-by-step guide.</p>
+<p>In short:</p>
+<ol>
+<li>Update the changelog: <code>uvx --from taskipy task changelog</code></li>
+<li>Review and edit if needed</li>
+<li>Update <code>__version__</code> in <code>src/your_package/__init__.py</code></li>
+<li>Commit: <code>git commit -m "chore: Release version X.Y.Z"</code></li>
+<li>Tag: <code>git tag vX.Y.Z</code></li>
+<li>Push: <code>git push &amp;&amp; git push --tags</code></li>
+<li>Create release: <code>gh release create vX.Y.Z --generate-notes</code></li>
+</ol>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<p>The documentation is built with <a href="https://zensical.org/">Zensical</a> and the <a href="https://github.com/pawamoy/mkdocstrings">mkdocstrings</a> plugin.</p>
+<h3 id="serving">Serving<a class="headerlink" href="#serving" title="Permanent link">&para;</a></h3>
+<p>Zensical provides a development server with files watching and live-reload.
+Run <code>uvx --from taskipy task docs</code> to serve your documentation on <code>localhost:8000</code>.</p>
+<h3 id="building">Building<a class="headerlink" href="#building" title="Permanent link">&para;</a></h3>
+<p>Build the documentation with:</p>
+<div class="highlight"><pre><span></span><code>uvx<span class="w"> </span>--from<span class="w"> </span>taskipy<span class="w"> </span>task<span class="w"> </span>docs_build
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../generate/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Generating a project">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Generating a project
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../update/" class="md-footer__link md-footer__link--next" aria-label="Next: Updating a project">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Updating a project
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oedokumaci" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.tooltips","navigation.footer","navigation.indexes","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","search.highlight","toc.follow"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5fcf0de6.min.js"></script>
+      
+    
+  </body>
+</html>

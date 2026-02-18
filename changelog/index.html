@@ -1,0 +1,5986 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI-native Copier template for production-ready Python projects">
+      
+      
+      
+        <link rel="canonical" href="https://oedokumaci.github.io/python-production-template/changelog/">
+      
+      
+        <link rel="prev" href="../contributing/">
+      
+      
+        <link rel="next" href="../license/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.23">
+    
+    
+      
+        <title>Changelog - Python Production Template</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1e989742.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Python Production Template" class="md-header__button md-logo" aria-label="Python Production Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Production Template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/oedokumaci/python-production-template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oedokumaci/python-production-template
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../requirements/" class="md-tabs__link">
+          
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Python Production Template" class="md-nav__button md-logo" aria-label="Python Production Template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg>
+
+    </a>
+    Python Production Template
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oedokumaci/python-production-template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oedokumaci/python-production-template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreleased
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0150-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.15.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0140-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.14.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0131-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.13.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.13.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0130-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.13.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0120-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.12.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0113-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.3 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0112-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.2 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0111-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.11.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0110-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.11.0 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0101-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.10.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.10.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0100-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.10.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#090-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.9.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#080-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.8.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.8.0 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#074-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.4 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.4 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#073-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.3 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.3 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#072-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.2 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.2 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#071-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#070-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#060-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.6.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#050-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.5.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#045-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.5 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.5 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#044-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.4 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.4 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#043-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.3 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.3 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#042-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.2 - 2026-01-22
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.2 - 2026-01-22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#041-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.1 - 2026-01-22
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#040-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.0 - 2026-01-22
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.0 - 2026-01-22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#030-2025-12-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.3.0 - 2025-12-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.3.0 - 2025-12-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#020-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.2.0 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0118-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.18 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.17 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0116-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.16 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0115-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.15 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.15 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0114-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.14 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.14 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0113-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.13 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.13 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0112-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.12 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0111-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.11 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.11 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0110-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.10 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.10 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#019-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.9 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#018-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.8 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.8 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#017-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.7 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.7 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#016-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.6 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#015-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.5 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#014-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.4 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#013-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.3 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#012-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.2 - 2025-11-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.2 - 2025-11-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#011-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.1 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#010-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.0 - 2025-11-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.0 - 2025-11-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1112-2025-11-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.2 - 2025-11-20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1111-2025-11-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.1 - 2025-11-08
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.11.1 - 2025-11-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1110-2025-10-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.0 - 2025-10-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.11.0 - 2025-10-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1102-2025-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.2 - 2025-10-09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.10.2 - 2025-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1101-2025-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.1 - 2025-10-09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.10.1 - 2025-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1100-2025-10-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.0 - 2025-10-07
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#190-2025-09-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9.0 - 2025-09-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#189-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.9 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#188-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.8 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#187-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.7 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-2025-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.6 - 2025-07-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-2025-07-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.5 - 2025-07-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.4 - 2025-04-08
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.3 - 2025-04-08
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-2025-03-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.2 - 2025-03-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.8.2 - 2025-03-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-2025-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.1 - 2025-03-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#180-2025-03-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.0 - 2025-03-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#171-2025-03-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.1 - 2025-03-02
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7.1 - 2025-03-02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#170-2025-03-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.0 - 2025-03-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#164-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.4 - 2025-02-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.3 - 2025-02-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.3 - 2025-02-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.2 - 2025-02-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#161-2025-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1 - 2025-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.1 - 2025-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-2025-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.0 - 2025-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.0 - 2025-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#157-2025-01-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.7 - 2025-01-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.7 - 2025-01-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#156-2024-12-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.6 - 2024-12-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#155-2024-12-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.5 - 2024-12-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.5 - 2024-12-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-2024-11-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.4 - 2024-11-21
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153-2024-11-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.3 - 2024-11-11
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.3 - 2024-11-11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#152-2024-10-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.2 - 2024-10-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.2 - 2024-10-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#151-2024-10-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1 - 2024-10-12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.1 - 2024-10-12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#150-2024-10-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.0 - 2024-10-12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#148-2024-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.8 - 2024-10-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#147-2024-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.7 - 2024-10-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-2024-10-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.6 - 2024-10-07
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.6 - 2024-10-07">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.5 - 2024-09-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.5 - 2024-09-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.4 - 2024-09-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3 - 2024-09-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2 - 2024-09-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.2 - 2024-09-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-2024-09-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1 - 2024-09-05
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.1 - 2024-09-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-2024-07-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.0 - 2024-07-04
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130-2024-06-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.0 - 2024-06-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3.0 - 2024-06-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1211-2024-06-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.11 - 2024-06-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.11 - 2024-06-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1210-2024-06-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.10 - 2024-06-18
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-2024-06-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.9 - 2024-06-14
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.9 - 2024-06-14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-2024-05-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.8 - 2024-05-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.8 - 2024-05-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.7 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.6 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.5 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.4 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.3 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.2 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.1 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.0 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.0 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-2024-03-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.0 - 2024-03-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1.0 - 2024-03-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-2024-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.8 - 2024-03-13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.8 - 2024-03-13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-2024-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.7 - 2024-03-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-2024-03-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.6 - 2024-03-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-2024-02-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.5 - 2024-02-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.5 - 2024-02-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.4 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.4 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.3 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.3 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.2 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.2 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.1 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.1 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-2024-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.0 - 2024-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.0 - 2024-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Usage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generating a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Working on a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updating a project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreleased
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0150-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.15.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0140-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.14.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0131-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.13.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.13.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0130-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.13.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0120-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.12.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0113-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.3 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0112-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.2 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0111-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.11.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0110-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.11.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.11.0 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0101-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.10.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.10.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0100-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.10.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#090-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.9.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#080-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.8.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.8.0 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#074-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.4 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.4 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#073-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.3 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.3 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#072-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.2 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.2 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#071-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.1 - 2026-02-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.7.1 - 2026-02-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#070-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.7.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#060-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.6.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#050-2026-02-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.5.0 - 2026-02-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#045-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.5 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.5 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#044-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.4 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.4 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#043-2026-01-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.3 - 2026-01-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.3 - 2026-01-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#042-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.2 - 2026-01-22
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.2 - 2026-01-22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#041-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.1 - 2026-01-22
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#040-2026-01-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.4.0 - 2026-01-22
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.4.0 - 2026-01-22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#030-2025-12-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.3.0 - 2025-12-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.3.0 - 2025-12-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#020-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.2.0 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0118-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.18 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117-2025-12-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.17 - 2025-12-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0116-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.16 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0115-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.15 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.15 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0114-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.14 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.14 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0113-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.13 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.13 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0112-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.12 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0111-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.11 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.11 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0110-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.10 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.10 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#019-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.9 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#018-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.8 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.8 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#017-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.7 - 2025-11-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.7 - 2025-11-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#016-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.6 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#015-2025-11-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.5 - 2025-11-30
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#014-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.4 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#013-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.3 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#012-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.2 - 2025-11-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.2 - 2025-11-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#011-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.1 - 2025-11-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#010-2025-11-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0.1.0 - 2025-11-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.1.0 - 2025-11-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1112-2025-11-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.2 - 2025-11-20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1111-2025-11-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.1 - 2025-11-08
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.11.1 - 2025-11-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1110-2025-10-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11.0 - 2025-10-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.11.0 - 2025-10-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1102-2025-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.2 - 2025-10-09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.10.2 - 2025-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1101-2025-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.1 - 2025-10-09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.10.1 - 2025-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1100-2025-10-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10.0 - 2025-10-07
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#190-2025-09-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9.0 - 2025-09-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#189-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.9 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#188-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.8 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#187-2025-08-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.7 - 2025-08-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-2025-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.6 - 2025-07-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-2025-07-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.5 - 2025-07-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.4 - 2025-04-08
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.3 - 2025-04-08
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-2025-03-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.2 - 2025-03-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.8.2 - 2025-03-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-2025-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.1 - 2025-03-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#180-2025-03-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8.0 - 2025-03-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#171-2025-03-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.1 - 2025-03-02
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7.1 - 2025-03-02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#170-2025-03-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7.0 - 2025-03-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#164-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.4 - 2025-02-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.3 - 2025-02-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.3 - 2025-02-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-2025-02-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.2 - 2025-02-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#161-2025-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.1 - 2025-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.1 - 2025-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-2025-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6.0 - 2025-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6.0 - 2025-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#157-2025-01-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.7 - 2025-01-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.7 - 2025-01-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#156-2024-12-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.6 - 2024-12-24
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#155-2024-12-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.5 - 2024-12-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.5 - 2024-12-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-2024-11-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.4 - 2024-11-21
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153-2024-11-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.3 - 2024-11-11
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.3 - 2024-11-11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#152-2024-10-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.2 - 2024-10-17
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.2 - 2024-10-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#151-2024-10-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.1 - 2024-10-12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5.1 - 2024-10-12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#150-2024-10-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5.0 - 2024-10-12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#148-2024-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.8 - 2024-10-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#147-2024-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.7 - 2024-10-11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-2024-10-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.6 - 2024-10-07
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.6 - 2024-10-07">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.5 - 2024-09-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.5 - 2024-09-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.4 - 2024-09-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3 - 2024-09-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-2024-09-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2 - 2024-09-27
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.2 - 2024-09-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-2024-09-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1 - 2024-09-05
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4.1 - 2024-09-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-2024-07-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.0 - 2024-07-04
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130-2024-06-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.0 - 2024-06-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3.0 - 2024-06-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1211-2024-06-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.11 - 2024-06-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.11 - 2024-06-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1210-2024-06-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.10 - 2024-06-18
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-2024-06-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.9 - 2024-06-14
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.9 - 2024-06-14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-2024-05-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.8 - 2024-05-24
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.8 - 2024-05-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.7 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.6 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-2024-05-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.5 - 2024-05-23
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.4 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.3 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.2 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.1 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-2024-04-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.0 - 2024-04-26
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.0 - 2024-04-26">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-2024-03-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1.0 - 2024-03-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1.0 - 2024-03-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-2024-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.8 - 2024-03-13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.8 - 2024-03-13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-2024-03-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.7 - 2024-03-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-2024-03-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.6 - 2024-03-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-2024-02-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.5 - 2024-02-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.5 - 2024-02-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.4 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.4 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.3 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.3 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.2 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.2 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-2024-02-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.1 - 2024-02-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.1 - 2024-02-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-2024-02-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.0.0 - 2024-02-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.0.0 - 2024-02-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+    <a href="https://github.com/oedokumaci/python-production-template/edit/master/docs/changelog.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/oedokumaci/python-production-template/raw/master/docs/changelog.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5M5 16l-3 3 3 3M9 22l3-3-3-3"/></svg>
+    </a>
+  
+
+
+<h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<!-- insertion marker -->
+<h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.15.0...HEAD">Compare with latest</a></small></p>
+<!-- insertion marker -->
+<h2 id="0150-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.15.0">0.15.0</a> - 2026-02-17<a class="headerlink" href="#0150-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.14.0...0.15.0">Compare with 0.14.0</a></small></p>
+<h2 id="0140-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.14.0">0.14.0</a> - 2026-02-17<a class="headerlink" href="#0140-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.13.1...0.14.0">Compare with 0.13.1</a></small></p>
+<h2 id="0131-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.13.1">0.13.1</a> - 2026-02-17<a class="headerlink" href="#0131-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.13.0...0.13.1">Compare with 0.13.0</a></small></p>
+<h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(docs): Document copier ref caching behavior and workaround (<a href="https://github.com/oedokumaci/python-production-template/commit/13444aba5befdb28cc879acd166bea780c55dc22">13444ab</a> by oedokumaci).</li>
+</ul>
+<h2 id="0130-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.13.0">0.13.0</a> - 2026-02-17<a class="headerlink" href="#0130-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.12.0...0.13.0">Compare with 0.12.0</a></small></p>
+<h2 id="0120-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.12.0">0.12.0</a> - 2026-02-17<a class="headerlink" href="#0120-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.11.3...0.12.0">Compare with 0.11.3</a></small></p>
+<h2 id="0113-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.11.3">0.11.3</a> - 2026-02-17<a class="headerlink" href="#0113-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.11.2...0.11.3">Compare with 0.11.2</a></small></p>
+<h2 id="0112-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.11.2">0.11.2</a> - 2026-02-17<a class="headerlink" href="#0112-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.11.1...0.11.2">Compare with 0.11.1</a></small></p>
+<h2 id="0111-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.11.1">0.11.1</a> - 2026-02-17<a class="headerlink" href="#0111-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.11.0...0.11.1">Compare with 0.11.0</a></small></p>
+<h3 id="fixed_1">Fixed<a class="headerlink" href="#fixed_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Replace remaining make references with taskipy commands (<a href="https://github.com/oedokumaci/python-production-template/commit/6d768b18512447ce759789580a9daf04ee5a752c">6d768b1</a> by oedokumaci).</li>
+</ul>
+<h2 id="0110-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.11.0">0.11.0</a> - 2026-02-17<a class="headerlink" href="#0110-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.10.1...0.11.0">Compare with 0.10.1</a></small></p>
+<h3 id="fixed_2">Fixed<a class="headerlink" href="#fixed_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(docs): Add --vcs-ref HEAD to copier copy commands to bypass cache (<a href="https://github.com/oedokumaci/python-production-template/commit/b4369b8a1223039a7fe01fc7f67a5127dbe66c1b">b4369b8</a> by oedokumaci).</li>
+</ul>
+<h2 id="0101-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.10.1">0.10.1</a> - 2026-02-17<a class="headerlink" href="#0101-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.10.0...0.10.1">Compare with 0.10.0</a></small></p>
+<h3 id="fixed_3">Fixed<a class="headerlink" href="#fixed_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Replace make references with taskipy commands in README.md.jinja (<a href="https://github.com/oedokumaci/python-production-template/commit/e704bf5c6ba4f425c3f745241afc525d4fa358a3">e704bf5</a> by oedokumaci).</li>
+</ul>
+<h2 id="0100-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.10.0">0.10.0</a> - 2026-02-17<a class="headerlink" href="#0100-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.9.0...0.10.0">Compare with 0.9.0</a></small></p>
+<h2 id="090-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.9.0">0.9.0</a> - 2026-02-17<a class="headerlink" href="#090-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.8.0...0.9.0">Compare with 0.8.0</a></small></p>
+<h2 id="080-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.8.0">0.8.0</a> - 2026-02-17<a class="headerlink" href="#080-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.7.4...0.8.0">Compare with 0.7.4</a></small></p>
+<h3 id="fixed_4">Fixed<a class="headerlink" href="#fixed_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Improve copyright holder help text to suggest company names (<a href="https://github.com/oedokumaci/python-production-template/commit/fa0c7c4939a7bba3a2f99f85520fdc2ce95241e9">fa0c7c4</a> by oedokumaci).</li>
+</ul>
+<h2 id="074-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.7.4">0.7.4</a> - 2026-02-17<a class="headerlink" href="#074-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.7.3...0.7.4">Compare with 0.7.3</a></small></p>
+<h3 id="fixed_5">Fixed<a class="headerlink" href="#fixed_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Default repository provider to github.com without prompting (<a href="https://github.com/oedokumaci/python-production-template/commit/bc8dd4597e4ed3c69c8d29b0a20134d7c89f0c50">bc8dd45</a> by oedokumaci).</li>
+</ul>
+<h2 id="073-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.7.3">0.7.3</a> - 2026-02-17<a class="headerlink" href="#073-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.7.2...0.7.3">Compare with 0.7.2</a></small></p>
+<h3 id="fixed_6">Fixed<a class="headerlink" href="#fixed_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Address review issues in upstream migration PR (<a href="https://github.com/oedokumaci/python-production-template/commit/8506149af9e6b3ef10bce92fb1db1254688f98bb">8506149</a> by oedokumaci).</li>
+</ul>
+<h2 id="072-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.7.2">0.7.2</a> - 2026-02-17<a class="headerlink" href="#072-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.7.1...0.7.2">Compare with 0.7.1</a></small></p>
+<h3 id="fixed_7">Fixed<a class="headerlink" href="#fixed_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(docs): Address review issues in workflow documentation (<a href="https://github.com/oedokumaci/python-production-template/commit/e16d979007ed2e435ab4f9c64e2e35059b4e5c5c">e16d979</a> by oedokumaci).</li>
+</ul>
+<h2 id="071-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.7.1">0.7.1</a> - 2026-02-17<a class="headerlink" href="#071-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.7.0...0.7.1">Compare with 0.7.0</a></small></p>
+<h3 id="fixed_8">Fixed<a class="headerlink" href="#fixed_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Replace _internal imports with public API in docs and AI guidance (<a href="https://github.com/oedokumaci/python-production-template/commit/a88dd56974c832ba2e4cec183b053e1626e5fa18">a88dd56</a> by Claude).</li>
+</ul>
+<h2 id="070-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.7.0">0.7.0</a> - 2026-02-17<a class="headerlink" href="#070-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.6.0...0.7.0">Compare with 0.6.0</a></small></p>
+<h2 id="060-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.6.0">0.6.0</a> - 2026-02-17<a class="headerlink" href="#060-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.5.0...0.6.0">Compare with 0.5.0</a></small></p>
+<h2 id="050-2026-02-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.5.0">0.5.0</a> - 2026-02-17<a class="headerlink" href="#050-2026-02-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.5...0.5.0">Compare with 0.4.5</a></small></p>
+<h2 id="045-2026-01-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.5">0.4.5</a> - 2026-01-26<a class="headerlink" href="#045-2026-01-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.4...0.4.5">Compare with 0.4.4</a></small></p>
+<h3 id="fixed_9">Fixed<a class="headerlink" href="#fixed_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Change default copyright license from ISC to MIT (<a href="https://github.com/oedokumaci/python-production-template/commit/1f61db127875984e5eddb9c0ee9260d396ca3d14">1f61db1</a> by oedokumaci).</li>
+</ul>
+<h2 id="044-2026-01-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.4">0.4.4</a> - 2026-01-26<a class="headerlink" href="#044-2026-01-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.3...0.4.4">Compare with 0.4.3</a></small></p>
+<h3 id="fixed_10">Fixed<a class="headerlink" href="#fixed_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Add new test command options and update CI workflow (<a href="https://github.com/oedokumaci/python-production-template/commit/86dd2d062643e270253802d685b6a2a6d66488f5">86dd2d0</a> by oedokumaci).</li>
+</ul>
+<h2 id="043-2026-01-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.3">0.4.3</a> - 2026-01-26<a class="headerlink" href="#043-2026-01-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.2...0.4.3">Compare with 0.4.2</a></small></p>
+<h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add instructions for remote repository setup (<a href="https://github.com/oedokumaci/python-production-template/commit/34fa8a726a67e820e2bcddd1afcbf814541d13f0">34fa8a7</a> by Berk Idem).</li>
+</ul>
+<h2 id="042-2026-01-22"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.2">0.4.2</a> - 2026-01-22<a class="headerlink" href="#042-2026-01-22" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.1...0.4.2">Compare with 0.4.1</a></small></p>
+<h3 id="fixed_11">Fixed<a class="headerlink" href="#fixed_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(template): Handle missing classifier key in gen_credits.py template (<a href="https://github.com/oedokumaci/python-production-template/commit/94b48c7e843249faa96bb93daaa86b542053a4d9">94b48c7</a> by oedokumaci).</li>
+</ul>
+<h2 id="041-2026-01-22"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.1">0.4.1</a> - 2026-01-22<a class="headerlink" href="#041-2026-01-22" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.4.0...0.4.1">Compare with 0.4.0</a></small></p>
+<h2 id="040-2026-01-22"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.4.0">0.4.0</a> - 2026-01-22<a class="headerlink" href="#040-2026-01-22" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.3.0...0.4.0">Compare with 0.3.0</a></small></p>
+<h3 id="fixed_12">Fixed<a class="headerlink" href="#fixed_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Update requirements and changelog commands for packaging compatibility (<a href="https://github.com/oedokumaci/python-production-template/commit/84803c64022dae1e074b978c03dbc3b8df4ad839">84803c6</a> by oedokumaci).</li>
+<li>fix(template): Format cli.py and debug.py templates for ruff compliance (<a href="https://github.com/oedokumaci/python-production-template/commit/0a25a638e8cee2822a4017516c89274581bb2554">0a25a63</a> by oedokumaci).</li>
+<li>fix: Use correct uvx syntax for taskipy (uvx --from taskipy task) (<a href="https://github.com/oedokumaci/python-production-template/commit/2a52f27c00aa0e800168c1e288a0a20c6302519d">2a52f27</a> by oedokumaci).</li>
+<li>fix: Apply Python logging best practices to generated <strong>init</strong>.py (<a href="https://github.com/oedokumaci/python-production-template/commit/94dc33e80c2a9d2bcc37be938e85ce55b3a54fbc">94dc33e</a> by oedokumaci).</li>
+</ul>
+<h2 id="030-2025-12-19"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.3.0">0.3.0</a> - 2025-12-19<a class="headerlink" href="#030-2025-12-19" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.2.0...0.3.0">Compare with 0.2.0</a></small></p>
+<h3 id="fixed_13">Fixed<a class="headerlink" href="#fixed_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(ci): Update git user name in CI configuration and adjust copyright date in tests (<a href="https://github.com/oedokumaci/python-production-template/commit/3e3b65a8114e672627b67619e50e6a9eb265d3d7">3e3b65a</a> by oedokumaci).</li>
+</ul>
+<h2 id="020-2025-12-05"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.2.0">0.2.0</a> - 2025-12-05<a class="headerlink" href="#020-2025-12-05" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.18...0.2.0">Compare with 0.1.18</a></small></p>
+<h2 id="0118-2025-12-05"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.18">0.1.18</a> - 2025-12-05<a class="headerlink" href="#0118-2025-12-05" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.17...0.1.18">Compare with 0.1.17</a></small></p>
+<h2 id="0117-2025-12-05"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.17">0.1.17</a> - 2025-12-05<a class="headerlink" href="#0117-2025-12-05" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.16...0.1.17">Compare with 0.1.16</a></small></p>
+<h2 id="0116-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.16">0.1.16</a> - 2025-11-30<a class="headerlink" href="#0116-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.15...0.1.16">Compare with 0.1.15</a></small></p>
+<h2 id="0115-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.15">0.1.15</a> - 2025-11-30<a class="headerlink" href="#0115-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.14...0.1.15">Compare with 0.1.14</a></small></p>
+<h3 id="fixed_14">Fixed<a class="headerlink" href="#fixed_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(config): Adjust Ruff configuration for notebook exclusion (<a href="https://github.com/oedokumaci/python-production-template/commit/90e25c83f2cc00f60c73aba187b2e86e8f937fa7">90e25c8</a> by oedokumaci).</li>
+</ul>
+<h2 id="0114-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.14">0.1.14</a> - 2025-11-30<a class="headerlink" href="#0114-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.13...0.1.14">Compare with 0.1.13</a></small></p>
+<h3 id="fixed_15">Fixed<a class="headerlink" href="#fixed_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(notebooks): Update README and starter notebook for marimo formatting (<a href="https://github.com/oedokumaci/python-production-template/commit/8ffa8adb1220a10d1faa33060d84149df06fbedf">8ffa8ad</a> by oedokumaci).</li>
+</ul>
+<h2 id="0113-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.13">0.1.13</a> - 2025-11-30<a class="headerlink" href="#0113-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.12...0.1.13">Compare with 0.1.12</a></small></p>
+<h3 id="fixed_16">Fixed<a class="headerlink" href="#fixed_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(notebooks): fix YouTube channel link in README and starter files (<a href="https://github.com/oedokumaci/python-production-template/commit/93b22f20fe33a43c5bf4cbe89d84fc83c4303867">93b22f2</a> by oedokumaci).</li>
+</ul>
+<h2 id="0112-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.12">0.1.12</a> - 2025-11-30<a class="headerlink" href="#0112-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.11...0.1.12">Compare with 0.1.11</a></small></p>
+<h2 id="0111-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.11">0.1.11</a> - 2025-11-30<a class="headerlink" href="#0111-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.10...0.1.11">Compare with 0.1.10</a></small></p>
+<h3 id="fixed_17">Fixed<a class="headerlink" href="#fixed_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(config): Remove tests directory from coverage source paths (<a href="https://github.com/oedokumaci/python-production-template/commit/201bb04587458a132fa8a23639b76ebdeaf1628d">201bb04</a> by oedokumaci).</li>
+</ul>
+<h2 id="0110-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.10">0.1.10</a> - 2025-11-30<a class="headerlink" href="#0110-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.9...0.1.10">Compare with 0.1.9</a></small></p>
+<h3 id="fixed_18">Fixed<a class="headerlink" href="#fixed_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Update symlink in .cursorrules.jinja to point to CLAUDE.md (<a href="https://github.com/oedokumaci/python-production-template/commit/60837b7348087281e24dd2443e664d9f0733a77e">60837b7</a> by oedokumaci).</li>
+</ul>
+<h2 id="019-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.9">0.1.9</a> - 2025-11-30<a class="headerlink" href="#019-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.8...0.1.9">Compare with 0.1.8</a></small></p>
+<h2 id="018-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.8">0.1.8</a> - 2025-11-30<a class="headerlink" href="#018-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.7...0.1.8">Compare with 0.1.7</a></small></p>
+<h3 id="fixed_19">Fixed<a class="headerlink" href="#fixed_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(docs): Update README.md.jinja to include full clone URL for repository (<a href="https://github.com/oedokumaci/python-production-template/commit/6c17515304a15811fc7241e24e9b059b3155ff53">6c17515</a> by oedokumaci).</li>
+</ul>
+<h2 id="017-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.7">0.1.7</a> - 2025-11-30<a class="headerlink" href="#017-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.6...0.1.7">Compare with 0.1.6</a></small></p>
+<h3 id="fixed_20">Fixed<a class="headerlink" href="#fixed_20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(tests): Release file lock in logging tests on Windows (<a href="https://github.com/oedokumaci/python-production-template/commit/df2d9e5f32d64737aa2892f2f425ca278e0a0586">df2d9e5</a> by oedokumaci).</li>
+</ul>
+<h2 id="016-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.6">0.1.6</a> - 2025-11-30<a class="headerlink" href="#016-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.5...0.1.6">Compare with 0.1.5</a></small></p>
+<h2 id="015-2025-11-30"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.5">0.1.5</a> - 2025-11-30<a class="headerlink" href="#015-2025-11-30" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.4...0.1.5">Compare with 0.1.4</a></small></p>
+<h2 id="014-2025-11-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.4">0.1.4</a> - 2025-11-29<a class="headerlink" href="#014-2025-11-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.3...0.1.4">Compare with 0.1.3</a></small></p>
+<h2 id="013-2025-11-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.3">0.1.3</a> - 2025-11-29<a class="headerlink" href="#013-2025-11-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.2...0.1.3">Compare with 0.1.2</a></small></p>
+<h2 id="012-2025-11-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.2">0.1.2</a> - 2025-11-29<a class="headerlink" href="#012-2025-11-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.1...0.1.2">Compare with 0.1.1</a></small></p>
+<h3 id="fixed_21">Fixed<a class="headerlink" href="#fixed_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix(template): Replace magic number with constant in CLI verbosity check (<a href="https://github.com/oedokumaci/python-production-template/commit/df346862aaabf22e630d1151bbe7c9e43b2580c8">df34686</a> by oedokumaci).</li>
+</ul>
+<h2 id="011-2025-11-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.1">0.1.1</a> - 2025-11-29<a class="headerlink" href="#011-2025-11-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/0.1.0...0.1.1">Compare with 0.1.0</a></small></p>
+<h2 id="010-2025-11-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/0.1.0">0.1.0</a> - 2025-11-29<a class="headerlink" href="#010-2025-11-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.11.2...0.1.0">Compare with 1.11.2</a></small></p>
+<h3 id="fixed_22">Fixed<a class="headerlink" href="#fixed_22" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: render credits without extra link (<a href="https://github.com/oedokumaci/python-production-template/commit/f50d9f62634b477c48b2988ccadc64fbb8019d6f">f50d9f6</a> by oedokumaci).</li>
+</ul>
+<h2 id="1112-2025-11-20"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.11.2">1.11.2</a> - 2025-11-20<a class="headerlink" href="#1112-2025-11-20" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.11.1...1.11.2">Compare with 1.11.1</a></small></p>
+<h2 id="1111-2025-11-08"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.11.1">1.11.1</a> - 2025-11-08<a class="headerlink" href="#1111-2025-11-08" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.11.0...1.11.1">Compare with 1.11.0</a></small></p>
+<h3 id="fixed_23">Fixed<a class="headerlink" href="#fixed_23" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix tagging commit when signed commits are enabled? (<a href="https://github.com/oedokumaci/python-production-template/commit/f1f095096134da1dbd0f1d138303938db7b81405">f1f0950</a> by Timothée Mazzucotelli).</li>
+<li>fix: Always force docs deployment (<a href="https://github.com/oedokumaci/python-production-template/commit/c41b8fe3e80aef11539191ad903d2b8d3f8419fd">c41b8fe</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1110-2025-10-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.11.0">1.11.0</a> - 2025-10-24<a class="headerlink" href="#1110-2025-10-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.10.2...1.11.0">Compare with 1.10.2</a></small></p>
+<h3 id="fixed_24">Fixed<a class="headerlink" href="#fixed_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Use specific version of artifact (<a href="https://github.com/oedokumaci/python-production-template/commit/91b5c99eb81bcdb826a04cbc7ab61c2042a09552">91b5c99</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1102-2025-10-09"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.10.2">1.10.2</a> - 2025-10-09<a class="headerlink" href="#1102-2025-10-09" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.10.1...1.10.2">Compare with 1.10.1</a></small></p>
+<h3 id="fixed_25">Fixed<a class="headerlink" href="#fixed_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix CI workflow (<a href="https://github.com/oedokumaci/python-production-template/commit/4f874da228df372601820a32550345b6156947de">4f874da</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1101-2025-10-09"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.10.1">1.10.1</a> - 2025-10-09<a class="headerlink" href="#1101-2025-10-09" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.10.0...1.10.1">Compare with 1.10.0</a></small></p>
+<h3 id="fixed_26">Fixed<a class="headerlink" href="#fixed_26" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix typo in PR template (<a href="https://github.com/oedokumaci/python-production-template/commit/b270abcd8a4cf25819ac2dbed5de9aa506dfea07">b270abc</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1100-2025-10-07"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.10.0">1.10.0</a> - 2025-10-07<a class="headerlink" href="#1100-2025-10-07" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.9.0...1.10.0">Compare with 1.9.0</a></small></p>
+<h2 id="190-2025-09-01"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.9.0">1.9.0</a> - 2025-09-01<a class="headerlink" href="#190-2025-09-01" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.9...1.9.0">Compare with 1.8.9</a></small></p>
+<h2 id="189-2025-08-15"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.9">1.8.9</a> - 2025-08-15<a class="headerlink" href="#189-2025-08-15" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.8...1.8.9">Compare with 1.8.8</a></small></p>
+<h2 id="188-2025-08-15"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.8">1.8.8</a> - 2025-08-15<a class="headerlink" href="#188-2025-08-15" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.7...1.8.8">Compare with 1.8.7</a></small></p>
+<h2 id="187-2025-08-15"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.7">1.8.7</a> - 2025-08-15<a class="headerlink" href="#187-2025-08-15" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.6...1.8.7">Compare with 1.8.6</a></small></p>
+<h2 id="186-2025-07-15"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.6">1.8.6</a> - 2025-07-15<a class="headerlink" href="#186-2025-07-15" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.5...1.8.6">Compare with 1.8.5</a></small></p>
+<h2 id="185-2025-07-02"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.5">1.8.5</a> - 2025-07-02<a class="headerlink" href="#185-2025-07-02" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.4...1.8.5">Compare with 1.8.4</a></small></p>
+<h2 id="184-2025-04-08"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.4">1.8.4</a> - 2025-04-08<a class="headerlink" href="#184-2025-04-08" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.3...1.8.4">Compare with 1.8.3</a></small></p>
+<h2 id="183-2025-04-08"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.3">1.8.3</a> - 2025-04-08<a class="headerlink" href="#183-2025-04-08" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.2...1.8.3">Compare with 1.8.2</a></small></p>
+<h2 id="182-2025-03-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.2">1.8.2</a> - 2025-03-24<a class="headerlink" href="#182-2025-03-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.1...1.8.2">Compare with 1.8.1</a></small></p>
+<h3 id="fixed_27">Fixed<a class="headerlink" href="#fixed_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Exclude mypy cache folders from sdists (<a href="https://github.com/oedokumaci/python-production-template/commit/16011cc9c6f3149c03e6c8c3362ecf32160c2bca">16011cc</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="181-2025-03-13"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.1">1.8.1</a> - 2025-03-13<a class="headerlink" href="#181-2025-03-13" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.8.0...1.8.1">Compare with 1.8.0</a></small></p>
+<h2 id="180-2025-03-11"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.8.0">1.8.0</a> - 2025-03-11<a class="headerlink" href="#180-2025-03-11" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.7.1...1.8.0">Compare with 1.7.1</a></small></p>
+<h2 id="171-2025-03-02"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.7.1">1.7.1</a> - 2025-03-02<a class="headerlink" href="#171-2025-03-02" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.7.0...1.7.1">Compare with 1.7.0</a></small></p>
+<h3 id="fixed_28">Fixed<a class="headerlink" href="#fixed_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Output llms-full.txt, not llms.txt (<a href="https://github.com/oedokumaci/python-production-template/commit/2c8b4f8d55d7e66d8c14c0ec897828d065969fb5">2c8b4f8</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="170-2025-03-01"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.7.0">1.7.0</a> - 2025-03-01<a class="headerlink" href="#170-2025-03-01" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.6.4...1.7.0">Compare with 1.6.4</a></small></p>
+<h2 id="164-2025-02-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.6.4">1.6.4</a> - 2025-02-24<a class="headerlink" href="#164-2025-02-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.6.3...1.6.4">Compare with 1.6.3</a></small></p>
+<h2 id="163-2025-02-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.6.3">1.6.3</a> - 2025-02-24<a class="headerlink" href="#163-2025-02-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.6.2...1.6.3">Compare with 1.6.2</a></small></p>
+<h3 id="fixed_29">Fixed<a class="headerlink" href="#fixed_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Ensure test jobs wait for quality one (for objects inventory artifact to be ready) (<a href="https://github.com/oedokumaci/python-production-template/commit/885f204f5b32b43099193cd2f7cc62e4011f39b0">885f204</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="162-2025-02-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.6.2">1.6.2</a> - 2025-02-24<a class="headerlink" href="#162-2025-02-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.6.1...1.6.2">Compare with 1.6.1</a></small></p>
+<h2 id="161-2025-02-19"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.6.1">1.6.1</a> - 2025-02-19<a class="headerlink" href="#161-2025-02-19" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.6.0...1.6.1">Compare with 1.6.0</a></small></p>
+<h3 id="fixed_30">Fixed<a class="headerlink" href="#fixed_30" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix license choices in template configuration (<a href="https://github.com/oedokumaci/python-production-template/commit/f26c22184aa6326f94a6722dc818b7364e8bb8bc">f26c221</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="160-2025-02-19"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.6.0">1.6.0</a> - 2025-02-19<a class="headerlink" href="#160-2025-02-19" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.7...1.6.0">Compare with 1.5.7</a></small></p>
+<h3 id="fixed_31">Fixed<a class="headerlink" href="#fixed_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Prevent extension crash with key error (<a href="https://github.com/oedokumaci/python-production-template/commit/1d27caf9d79919c1e4d97cb312b19e80bc947d59">1d27caf</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="157-2025-01-23"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.7">1.5.7</a> - 2025-01-23<a class="headerlink" href="#157-2025-01-23" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.6...1.5.7">Compare with 1.5.6</a></small></p>
+<h3 id="fixed_32">Fixed<a class="headerlink" href="#fixed_32" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Preserve symlinks (make -&gt; make.py) (<a href="https://github.com/oedokumaci/python-production-template/commit/dab12193b3651001e10dab56b0ff72aacfcdf3c7">dab1219</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="156-2024-12-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.6">1.5.6</a> - 2024-12-24<a class="headerlink" href="#156-2024-12-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.5...1.5.6">Compare with 1.5.5</a></small></p>
+<h2 id="155-2024-12-23"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.5">1.5.5</a> - 2024-12-23<a class="headerlink" href="#155-2024-12-23" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.4...1.5.5">Compare with 1.5.4</a></small></p>
+<h3 id="fixed_33">Fixed<a class="headerlink" href="#fixed_33" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Ignore constraints on main package (from dependencies), to allow resolving deps in forks/CI (<a href="https://github.com/oedokumaci/python-production-template/commit/d644679a3e6370244f7e7893dfdbd1d776288096">d644679</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="154-2024-11-21"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.4">1.5.4</a> - 2024-11-21<a class="headerlink" href="#154-2024-11-21" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.3...1.5.4">Compare with 1.5.3</a></small></p>
+<h2 id="153-2024-11-11"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.3">1.5.3</a> - 2024-11-11<a class="headerlink" href="#153-2024-11-11" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.2...1.5.3">Compare with 1.5.2</a></small></p>
+<h3 id="fixed_34">Fixed<a class="headerlink" href="#fixed_34" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Don't pass <code>--python python</code> to uv, which requires a <code>python</code> exec in the PATH (<a href="https://github.com/oedokumaci/python-production-template/commit/331db66178682d9f310280a7ead6bd6d6ca3dbf5">331db66</a> by Timothée Mazzucotelli).</li>
+<li>fix: Make it so that linters see the make script (<a href="https://github.com/oedokumaci/python-production-template/commit/4989d1e628bac45472ffc6b8deaa2879765cde5c">4989d1e</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="152-2024-10-17"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.2">1.5.2</a> - 2024-10-17<a class="headerlink" href="#152-2024-10-17" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.1...1.5.2">Compare with 1.5.1</a></small></p>
+<h3 id="fixed_35">Fixed<a class="headerlink" href="#fixed_35" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Also remove Gitpod badge since we removed configuration (<a href="https://github.com/oedokumaci/python-production-template/commit/65cc91a26231944e8cfd338ff2fca1d6b9db4d7f">65cc91a</a> by Timothée Mazzucotelli).</li>
+<li>fix: Only add <code>force</code> parameter to docs-deploy duty when insiders is enabled (<a href="https://github.com/oedokumaci/python-production-template/commit/8df12ae770ffee8f2966fa8aae41e01125c6250e">8df12ae</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="151-2024-10-12"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.1">1.5.1</a> - 2024-10-12<a class="headerlink" href="#151-2024-10-12" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.5.0...1.5.1">Compare with 1.5.0</a></small></p>
+<h3 id="fixed_36">Fixed<a class="headerlink" href="#fixed_36" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Always fetch the whole Git history, needed to build the current project in non-editable mode with an up-to-date version (<a href="https://github.com/oedokumaci/python-production-template/commit/f52522e0d611f6d4fb5d8c8b8c16925b651ad700">f52522e</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="150-2024-10-12"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.5.0">1.5.0</a> - 2024-10-12<a class="headerlink" href="#150-2024-10-12" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.8...1.5.0">Compare with 1.4.8</a></small></p>
+<h2 id="148-2024-10-11"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.8">1.4.8</a> - 2024-10-11<a class="headerlink" href="#148-2024-10-11" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.7...1.4.8">Compare with 1.4.7</a></small></p>
+<h2 id="147-2024-10-11"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.7">1.4.7</a> - 2024-10-11<a class="headerlink" href="#147-2024-10-11" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.6...1.4.7">Compare with 1.4.6</a></small></p>
+<h2 id="146-2024-10-07"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.6">1.4.6</a> - 2024-10-07<a class="headerlink" href="#146-2024-10-07" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.5...1.4.6">Compare with 1.4.5</a></small></p>
+<h3 id="fixed_37">Fixed<a class="headerlink" href="#fixed_37" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Use uv to fix pip installs breaking system Python in GHA (<a href="https://github.com/oedokumaci/python-production-template/commit/b86d3e99c34224a5203ac295b34deaa12d85fba2">b86d3e9</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="145-2024-09-27"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.5">1.4.5</a> - 2024-09-27<a class="headerlink" href="#145-2024-09-27" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.4...1.4.5">Compare with 1.4.4</a></small></p>
+<h3 id="fixed_38">Fixed<a class="headerlink" href="#fixed_38" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix make help message indentation (<a href="https://github.com/oedokumaci/python-production-template/commit/addb51ed8daaeb19d40cd02665f8fc68bb02f4b8">addb51e</a> by Timothée Mazzucotelli).</li>
+<li>fix: Invalidate uv cache based on pyproject.toml (<a href="https://github.com/oedokumaci/python-production-template/commit/b78ce880c56b3e346d5b414bda89ac4a8cd22335">b78ce88</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="144-2024-09-27"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.4">1.4.4</a> - 2024-09-27<a class="headerlink" href="#144-2024-09-27" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.3...1.4.4">Compare with 1.4.3</a></small></p>
+<h2 id="143-2024-09-27"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.3">1.4.3</a> - 2024-09-27<a class="headerlink" href="#143-2024-09-27" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.2...1.4.3">Compare with 1.4.2</a></small></p>
+<h2 id="142-2024-09-27"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.2">1.4.2</a> - 2024-09-27<a class="headerlink" href="#142-2024-09-27" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.1...1.4.2">Compare with 1.4.1</a></small></p>
+<h3 id="fixed_39">Fixed<a class="headerlink" href="#fixed_39" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Better flush help message for make script (<a href="https://github.com/oedokumaci/python-production-template/commit/fb2d373b217c1d3c216b01f82e3db5c2f1542558">fb2d373</a> by Timothée Mazzucotelli).</li>
+<li>fix: Better handle <code>gh</code> command error (when fetching "Documentation" category ID for discussions) (<a href="https://github.com/oedokumaci/python-production-template/commit/896dfb39ea6710b3965fd3162fa9b621f916d166">896dfb3</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="141-2024-09-05"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.1">1.4.1</a> - 2024-09-05<a class="headerlink" href="#141-2024-09-05" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.4.0...1.4.1">Compare with 1.4.0</a></small></p>
+<h3 id="fixed_40">Fixed<a class="headerlink" href="#fixed_40" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Disallow overrides when getting Git remote in docs-deploy duty (<a href="https://github.com/oedokumaci/python-production-template/commit/cb0135bf5bc80768fea17366efba35293c60ba93">cb0135b</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="140-2024-07-04"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.4.0">1.4.0</a> - 2024-07-04<a class="headerlink" href="#140-2024-07-04" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.3.0...1.4.0">Compare with 1.3.0</a></small></p>
+<h2 id="130-2024-06-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.3.0">1.3.0</a> - 2024-06-26<a class="headerlink" href="#130-2024-06-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.11...1.3.0">Compare with 1.2.11</a></small></p>
+<h3 id="fixed_41">Fixed<a class="headerlink" href="#fixed_41" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix make script to be compatible with Python &lt; 3.10 (<a href="https://github.com/oedokumaci/python-production-template/commit/795f39f42a51a9ecb8c316e8dc5546a56e4e2f8f">795f39f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Update contributing docs (mention <code>make</code> script instead of Makefile) (<a href="https://github.com/oedokumaci/python-production-template/commit/7e76e47fed603703b0fd6868dca4b318cb0c585c">7e76e47</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1211-2024-06-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.11">1.2.11</a> - 2024-06-26<a class="headerlink" href="#1211-2024-06-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.10...1.2.11">Compare with 1.2.10</a></small></p>
+<h3 id="fixed_42">Fixed<a class="headerlink" href="#fixed_42" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Make sure to print errors in case of failure of <code>make</code> command (<a href="https://github.com/oedokumaci/python-production-template/commit/54696f3ced18fee3b6d7262989f9f97b5d2218ea">54696f3</a> by Timothée Mazzucotelli).</li>
+<li>fix: Make sure <code>setup</code> returns non-0 exit code when uv fails to resolve dependencies (<a href="https://github.com/oedokumaci/python-production-template/commit/ba5c4dcc8128afa06abd1d2c679c263e4761fd59">ba5c4dc</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix Twine dependency (5.1 has been yanked) (<a href="https://github.com/oedokumaci/python-production-template/commit/e022917f40db2e82c07f5b4a3e2eb31f947c48a6">e022917</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="1210-2024-06-18"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.10">1.2.10</a> - 2024-06-18<a class="headerlink" href="#1210-2024-06-18" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.9...1.2.10">Compare with 1.2.9</a></small></p>
+<h2 id="129-2024-06-14"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.9">1.2.9</a> - 2024-06-14<a class="headerlink" href="#129-2024-06-14" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.8...1.2.9">Compare with 1.2.8</a></small></p>
+<h3 id="fixed_43">Fixed<a class="headerlink" href="#fixed_43" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Re-include tests folder in source distributions (<a href="https://github.com/oedokumaci/python-production-template/commit/3d9a7e17167294ee43673cafa615931614240235">3d9a7e1</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="128-2024-05-24"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.8">1.2.8</a> - 2024-05-24<a class="headerlink" href="#128-2024-05-24" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.7...1.2.8">Compare with 1.2.7</a></small></p>
+<h3 id="fixed_44">Fixed<a class="headerlink" href="#fixed_44" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix calling tasks from actual Makefile (<a href="https://github.com/oedokumaci/python-production-template/commit/30d3bc91d01d59d7b0ef10b7a5a3f77bd64543a2">30d3bc9</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="127-2024-05-23"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.7">1.2.7</a> - 2024-05-23<a class="headerlink" href="#127-2024-05-23" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.6...1.2.7">Compare with 1.2.6</a></small></p>
+<h2 id="126-2024-05-23"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.6">1.2.6</a> - 2024-05-23<a class="headerlink" href="#126-2024-05-23" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.5...1.2.6">Compare with 1.2.5</a></small></p>
+<h2 id="125-2024-05-23"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.5">1.2.5</a> - 2024-05-23<a class="headerlink" href="#125-2024-05-23" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.4...1.2.5">Compare with 1.2.4</a></small></p>
+<h2 id="124-2024-04-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.4">1.2.4</a> - 2024-04-26<a class="headerlink" href="#124-2024-04-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.3...1.2.4">Compare with 1.2.3</a></small></p>
+<h3 id="fixed_45">Fixed<a class="headerlink" href="#fixed_45" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Super final ultimate fix for publish duty (<a href="https://github.com/oedokumaci/python-production-template/commit/f888d9fc312dbdc3fb51227de2cc3d11191bd8b9">f888d9f</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="123-2024-04-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.3">1.2.3</a> - 2024-04-26<a class="headerlink" href="#123-2024-04-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.2...1.2.3">Compare with 1.2.2</a></small></p>
+<h3 id="fixed_46">Fixed<a class="headerlink" href="#fixed_46" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Further fixes to release/publish duties (<a href="https://github.com/oedokumaci/python-production-template/commit/263580a69cb725e0bf927c6cda5598f372087b73">263580a</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="122-2024-04-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.2">1.2.2</a> - 2024-04-26<a class="headerlink" href="#122-2024-04-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.1...1.2.2">Compare with 1.2.1</a></small></p>
+<h3 id="fixed_47">Fixed<a class="headerlink" href="#fixed_47" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Don't use modern annotations as duty fails evaluating them on Python 3.8 and 3.9 (<a href="https://github.com/oedokumaci/python-production-template/commit/4cd01f9d6e5f4f866dc1b3ffe8f7f39ab407e2ba">4cd01f9</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="121-2024-04-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.1">1.2.1</a> - 2024-04-26<a class="headerlink" href="#121-2024-04-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.2.0...1.2.1">Compare with 1.2.0</a></small></p>
+<h3 id="fixed_48">Fixed<a class="headerlink" href="#fixed_48" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Only print available tasks if venvs are setup (<a href="https://github.com/oedokumaci/python-production-template/commit/0c65bdf186498fc701162d37a2029aba5760b867">0c65bdf</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix build and publish duties (<a href="https://github.com/oedokumaci/python-production-template/commit/27eb5490128131c6681d4bb15d84950f8d971296">27eb549</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="120-2024-04-26"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.2.0">1.2.0</a> - 2024-04-26<a class="headerlink" href="#120-2024-04-26" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.1.0...1.2.0">Compare with 1.1.0</a></small></p>
+<h3 id="fixed_49">Fixed<a class="headerlink" href="#fixed_49" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Don't include current project in credits (<a href="https://github.com/oedokumaci/python-production-template/commit/77ae955bde1f5816eb6f2d83a0d5645643b33dfc">77ae955</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix parsing options in make scripts (<a href="https://github.com/oedokumaci/python-production-template/commit/4dbb47cf0c308b4a2b405ed7300dbbf5523b0df5">4dbb47c</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="110-2024-03-19"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.1.0">1.1.0</a> - 2024-03-19<a class="headerlink" href="#110-2024-03-19" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.8...1.1.0">Compare with 1.0.8</a></small></p>
+<h3 id="fixed_50">Fixed<a class="headerlink" href="#fixed_50" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix issues with credits generation (<a href="https://github.com/oedokumaci/python-production-template/commit/73840229fc5be3106a71354e33a910b1e996161c">7384022</a> by Timothée Mazzucotelli).</li>
+<li>fix: Correctly exclude fixtures from Ruff (<a href="https://github.com/oedokumaci/python-production-template/commit/2dcda18c230c0584a24e54fdf6098c4559716800">2dcda18</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="108-2024-03-13"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.8">1.0.8</a> - 2024-03-13<a class="headerlink" href="#108-2024-03-13" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.7...1.0.8">Compare with 1.0.7</a></small></p>
+<h3 id="fixed_51">Fixed<a class="headerlink" href="#fixed_51" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Remove prefix from completed goals HTML ids (<a href="https://github.com/oedokumaci/python-production-template/commit/3e1d865c27c48fb760a96928055e64460dcab765">3e1d865</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="107-2024-03-13"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.7">1.0.7</a> - 2024-03-13<a class="headerlink" href="#107-2024-03-13" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.6...1.0.7">Compare with 1.0.6</a></small></p>
+<h2 id="106-2024-03-02"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.6">1.0.6</a> - 2024-03-02<a class="headerlink" href="#106-2024-03-02" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.5...1.0.6">Compare with 1.0.5</a></small></p>
+<h2 id="105-2024-02-29"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.5">1.0.5</a> - 2024-02-29<a class="headerlink" href="#105-2024-02-29" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.4...1.0.5">Compare with 1.0.4</a></small></p>
+<h3 id="fixed_52">Fixed<a class="headerlink" href="#fixed_52" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix view/edit URIs in docs (<a href="https://github.com/oedokumaci/python-production-template/commit/8fdf5dd1192f5a868eb484e5bbc020e9c9b1d16a">8fdf5dd</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="104-2024-02-28"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.4">1.0.4</a> - 2024-02-28<a class="headerlink" href="#104-2024-02-28" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.3...1.0.4">Compare with 1.0.3</a></small></p>
+<h3 id="fixed_53">Fixed<a class="headerlink" href="#fixed_53" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: I AM SO ANNOYED BY THIS OS (<a href="https://github.com/oedokumaci/python-production-template/commit/2c5beb4f341f510ebb7d04ab29a02cf99c46195e">2c5beb4</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix dependencies installation in CI (<a href="https://github.com/oedokumaci/python-production-template/commit/af33aabbbf75e8f76e05b82d20f8ac3f4cbb51aa">af33aab</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="103-2024-02-28"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.3">1.0.3</a> - 2024-02-28<a class="headerlink" href="#103-2024-02-28" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.2...1.0.3">Compare with 1.0.2</a></small></p>
+<h3 id="fixed_54">Fixed<a class="headerlink" href="#fixed_54" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix parsing options now that the script exits on errors (<a href="https://github.com/oedokumaci/python-production-template/commit/c8007383ecfbb8edb54af31d54a0e136c82cb758">c800738</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="102-2024-02-28"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.2">1.0.2</a> - 2024-02-28<a class="headerlink" href="#102-2024-02-28" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.1...1.0.2">Compare with 1.0.1</a></small></p>
+<h3 id="fixed_55">Fixed<a class="headerlink" href="#fixed_55" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix uv install and credits again (<a href="https://github.com/oedokumaci/python-production-template/commit/7ce4e3b56c678637acc030655b13d6a87b30f0bd">7ce4e3b</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="101-2024-02-28"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.1">1.0.1</a> - 2024-02-28<a class="headerlink" href="#101-2024-02-28" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/1.0.0...1.0.1">Compare with 1.0.0</a></small></p>
+<h3 id="fixed_56">Fixed<a class="headerlink" href="#fixed_56" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: Fix credits generation, preventing dev-deps to appear as runtime ones (<a href="https://github.com/oedokumaci/python-production-template/commit/dfa6ed40ab7caaa7aa475d6d48f3fbbaf8c32b38">dfa6ed4</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix re-installation of deps (<a href="https://github.com/oedokumaci/python-production-template/commit/ace356a0cea6bf6d074af8a8bbe35e846661abf0">ace356a</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h2 id="100-2024-02-19"><a href="https://github.com/oedokumaci/python-production-template/releases/tag/1.0.0">1.0.0</a> - 2024-02-19<a class="headerlink" href="#100-2024-02-19" title="Permanent link">&para;</a></h2>
+<p><small><a href="https://github.com/oedokumaci/python-production-template/compare/ad5932b04cecfcc6e6d1311f10082289cbc6ed76...1.0.0">Compare with first commit</a></small></p>
+<h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add Gitter badge to README (<a href="https://github.com/oedokumaci/python-production-template/commit/f3694ea557dc979542b647b20509ed17e698a579">f3694ea</a> by Timothée Mazzucotelli).</li>
+<li>Add Python 3.9, use Poetry version in CI cache key (<a href="https://github.com/oedokumaci/python-production-template/commit/08542d02fcc81d8fb1eae37e8b6bc168d194c0d1">08542d0</a> by Timothée Mazzucotelli).</li>
+<li>Add note about Poetry and Invoke requirements (<a href="https://github.com/oedokumaci/python-production-template/commit/3e76b3919977959c43143b19d7baec1446f59376">3e76b39</a> by Timothée Mazzucotelli).</li>
+<li>Add markdown extensions (<a href="https://github.com/oedokumaci/python-production-template/commit/6e49531bb276bbcd5f70e5d33c2feef93adf46e2">6e49531</a> by Timothée Mazzucotelli).</li>
+<li>Add funding file (<a href="https://github.com/oedokumaci/python-production-template/commit/d3c00aaf327f94c21ef2007eda6dcd622e9b3771">d3c00aa</a> by Timothée Mazzucotelli).</li>
+<li>Add TODO comments (<a href="https://github.com/oedokumaci/python-production-template/commit/0a861f90abdae8b0e8ca528767ef1e709e3e261a">0a861f9</a> by Timothée Mazzucotelli).</li>
+<li>Add recipe to update dependencies (<a href="https://github.com/oedokumaci/python-production-template/commit/7c02eb8e88768d3c35bbd020ea54a1b70d8d4b4a">7c02eb8</a> by Timothée Mazzucotelli).</li>
+<li>Add missing pytest-randomly optional dependency (<a href="https://github.com/oedokumaci/python-production-template/commit/3fe5f43ee6ef577cd341b797860aa7912c2347a1">3fe5f43</a> by Timothée Mazzucotelli).</li>
+<li>Add MacOS and Windows to test matrix (<a href="https://github.com/oedokumaci/python-production-template/commit/309bc3067ee94339bdeac857b6922bbf239c6d78">309bc30</a> by Timothée Mazzucotelli).</li>
+<li>Add blank lines after headings (<a href="https://github.com/oedokumaci/python-production-template/commit/98e2824002308f765c3b58f7724fe14b707a9913">98e2824</a> by Timothée Mazzucotelli).</li>
+<li>Add GitHub CI (<a href="https://github.com/oedokumaci/python-production-template/commit/21bbae8b6e9b9c8bb88bd63414a31ab6ad8d91fa">21bbae8</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h3 id="fixed_57">Fixed<a class="headerlink" href="#fixed_57" title="Permanent link">&para;</a></h3>
+<ul>
+<li>fix: This OS is <em>so</em> annoying (<a href="https://github.com/oedokumaci/python-production-template/commit/ddbac0f631010a69bd81a2bbb6adfe3e9f074294">ddbac0f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Append exe to command names on Windows (<a href="https://github.com/oedokumaci/python-production-template/commit/279f5c227f03f7dfee6cff2834ed128d07d15546">279f5c2</a> by Timothée Mazzucotelli).</li>
+<li>fix: Don't source venv's BAT script on Windows (<a href="https://github.com/oedokumaci/python-production-template/commit/cf61ecfa7013b236ba10bf88df82c47f05ab79ca">cf61ecf</a> by Timothée Mazzucotelli).</li>
+<li>fix: Correctly set Python versions to empty string in CI (<a href="https://github.com/oedokumaci/python-production-template/commit/e8382dfab6faed698dea3289f38544f574ea0bfb">e8382df</a> by Timothée Mazzucotelli).</li>
+<li>fix: Only set Python versions if unset (<a href="https://github.com/oedokumaci/python-production-template/commit/a5f5000e90f5093cb25e54d81dd370a63da322c1">a5f5000</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use insiders repository name in insiders installation page (<a href="https://github.com/oedokumaci/python-production-template/commit/2308ed4f4d907ffce3bf6a418e345dfc021ff8c2">2308ed4</a> by Timothée Mazzucotelli).</li>
+<li>fix: Pass funding when loading goals from list of sources (<a href="https://github.com/oedokumaci/python-production-template/commit/91aed6316dc38de4fc274970bdc445ff309948d4">91aed63</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix Insiders links in README again (<a href="https://github.com/oedokumaci/python-production-template/commit/9b220afcd9ab6ea431787b3134c89a7b866b71fc">9b220af</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix links to Insiders in README (<a href="https://github.com/oedokumaci/python-production-template/commit/5f36ca4060d0c6ab450823b35cf5fdfa62a7749c">5f36ca4</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix link in Gitter badge (<a href="https://github.com/oedokumaci/python-production-template/commit/7130f45ade180caa311f163d53cfeeb145680cff">7130f45</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix spacing after sponsors in insiders page (<a href="https://github.com/oedokumaci/python-production-template/commit/d82c5eb54d10fc0cf1751fa123322517ec9f9f51">d82c5eb</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix relative paths (to work with MkDocs <code>-f</code> option) (<a href="https://github.com/oedokumaci/python-production-template/commit/eb7d954177dd94412f19cf014a3d18a29ee35d16">eb7d954</a> by Timothée Mazzucotelli).</li>
+<li>fix: Have a dedicated question for insiders repository name (<a href="https://github.com/oedokumaci/python-production-template/commit/e2bccdebbf1e14f93fe44c9c2a4f22c1f0890878">e2bccde</a> by Timothée Mazzucotelli).</li>
+<li>fixup! feat: Add <code>ssort</code> to code formatting task (<a href="https://github.com/oedokumaci/python-production-template/commit/12f4fb6c433c0919530b5303a0b9f5052c2c9acb">12f4fb6</a> by Timothée Mazzucotelli).</li>
+<li>fix: Don't use double-quotes in filenames (<a href="https://github.com/oedokumaci/python-production-template/commit/6c4749ea12cddb268aa0157cdce503f47e7e3424">6c4749e</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix external link indicator for Chrome (<a href="https://github.com/oedokumaci/python-production-template/commit/72c59d91949f4c6eb51de6ccc57bb05fe4c9fc9d">72c59d9</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use main branch for edit URIs in docs (<a href="https://github.com/oedokumaci/python-production-template/commit/ebb9ddf7c9b96f9b7354dfa688c6f6b9cdeb2552">ebb9ddf</a> by Timothée Mazzucotelli).</li>
+<li>fix: Re-enable CI on branch push (<a href="https://github.com/oedokumaci/python-production-template/commit/8c30425a3ca240063f41606c9a40b4609946947c">8c30425</a> by Timothée Mazzucotelli).</li>
+<li>fix: Allow Python prerelease through setup-pdm action (<a href="https://github.com/oedokumaci/python-production-template/commit/b2c91e4b2c07ac96d86cd75403be4e258913b925">b2c91e4</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix quality (<a href="https://github.com/oedokumaci/python-production-template/commit/abd744f313147e1bfd2ffd577f741348a5cb7a16">abd744f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Only show unreleased insiders features, not implemented ones (<a href="https://github.com/oedokumaci/python-production-template/commit/5a46c987b92696fa97eaa8852b9163090ede5093">5a46c98</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix symbol type in nav (<a href="https://github.com/oedokumaci/python-production-template/commit/cc6eb69e1ad4bc369ca4a663816c219e09987ad9">cc6eb69</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix edit URI for docs pages (<a href="https://github.com/oedokumaci/python-production-template/commit/90ba4867ff3ed7f41372129ba21daeeb10e8724b">90ba486</a> by Timothée Mazzucotelli).</li>
+<li>fix: Build insiders dists with full Git history (<a href="https://github.com/oedokumaci/python-production-template/commit/2bfa7415b36d76cb0532bd9379fdd9eb3a857900">2bfa741</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix Gitter badge URL (<a href="https://github.com/oedokumaci/python-production-template/commit/105715b209a057c466483c826b2c657678403ffd">105715b</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix project URLs (Gitter/Funding) (<a href="https://github.com/oedokumaci/python-production-template/commit/4d90e980fd3f6580e6d2942c3c02fbf7c18ec771">4d90e98</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix mdash position in announcement bar (<a href="https://github.com/oedokumaci/python-production-template/commit/812dc1d8bf2567628203cdbeacc839d4320a1fad">812dc1d</a> by Timothée Mazzucotelli).</li>
+<li>fix: Lock with cross-platform locally (takes Python version into account otherwise) (<a href="https://github.com/oedokumaci/python-production-template/commit/f6d5e1f4af959985d93ab1d23a48e96d96e73a31">f6d5e1f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Improve style for autorefs external links (<a href="https://github.com/oedokumaci/python-production-template/commit/315e38551727487682655065da9ade9823a822c2">315e385</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix credits generation again (<a href="https://github.com/oedokumaci/python-production-template/commit/87cbd91ee8bc4e73ebff810c66429a57c88d0d58">87cbd91</a> by Timothée Mazzucotelli).</li>
+<li>fix: Prevent error when generating credits (<a href="https://github.com/oedokumaci/python-production-template/commit/747c3dde362e88cec02b0f5682855566e218c8b9">747c3dd</a> by Timothée Mazzucotelli).</li>
+<li>fix: Only run dists workflow in insiders repo (<a href="https://github.com/oedokumaci/python-production-template/commit/24200e9511e53b15b44b25cda7d5739dcff656a9">24200e9</a> by Timothée Mazzucotelli).</li>
+<li>fix: Improve insiders script (<a href="https://github.com/oedokumaci/python-production-template/commit/f99dbbf25202d9b7a2b7d19c83b0a78e0e8623ac">f99dbbf</a> by Timothée Mazzucotelli).</li>
+<li>fix: Add write permissions to dists job (<a href="https://github.com/oedokumaci/python-production-template/commit/7bcde716a8957f20f2b5b5f328435af89205fe26">7bcde71</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix conversion to date (<a href="https://github.com/oedokumaci/python-production-template/commit/25d9c13361ca9e4cabaeb907aebb014f013ccc6a">25d9c13</a> by Timothée Mazzucotelli).</li>
+<li>fix: Replace XML entity with actual char in generated heading (buggy in Markdown Exec) (<a href="https://github.com/oedokumaci/python-production-template/commit/cc555959aa52e2a836317d5449d6e02e0212cae6">cc55595</a> by Timothée Mazzucotelli).</li>
+<li>fix: Set DEPLOY to "true" (loaded as YAML) (<a href="https://github.com/oedokumaci/python-production-template/commit/9e4b8cdb3fdbc8c40320c2f55ae020795def1895">9e4b8cd</a> by Timothée Mazzucotelli).</li>
+<li>fix: Don't hardcode ISC license (<a href="https://github.com/oedokumaci/python-production-template/commit/43f1dc77a33af77f192228d5100dde4f5517c8df">43f1dc7</a> by Timothée Mazzucotelli).</li>
+<li>fix: Support empty command line name (<a href="https://github.com/oedokumaci/python-production-template/commit/c55faba15a89d0c47d39edd143f1b7954aa20e9c">c55faba</a> by Timothée Mazzucotelli).</li>
+<li>fix: Remove test code for printing sponsors (<a href="https://github.com/oedokumaci/python-production-template/commit/22262f88cb2bf3dad00bc2075425021346f95f12">22262f8</a> by Timothée Mazzucotelli).</li>
+<li>fix: Remove unused dependency (<a href="https://github.com/oedokumaci/python-production-template/commit/5e771a7b829893aab674d1df432257d4fda826a4">5e771a7</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix check-api duty (check all packages in src) (<a href="https://github.com/oedokumaci/python-production-template/commit/20154ab333950499b9bb4bce77f59bfacf1786cf">20154ab</a> by Timothée Mazzucotelli).</li>
+<li>fix: Add black to docs dependencies, to format signatures (<a href="https://github.com/oedokumaci/python-production-template/commit/9fa3f8dec717252e01a8f34a5e5d30e725f48281">9fa3f8d</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix format in duties.py (<a href="https://github.com/oedokumaci/python-production-template/commit/0f843b8a8e3f21d049087f38c9c87032bd5018a5">0f843b8</a> by Timothée Mazzucotelli).</li>
+<li>fix: Rename summary file to prevent breaking sitemap (<a href="https://github.com/oedokumaci/python-production-template/commit/e9c788ddc748507443576b5df670a6ad7a93c51e">e9c788d</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix credits for PDM 2.3.0 (and hide ToC) (<a href="https://github.com/oedokumaci/python-production-template/commit/adc8fd5793db4f8d4c2179a0d71b84f3a7c15b74">adc8fd5</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use Python 3.11 now that it was released (<a href="https://github.com/oedokumaci/python-production-template/commit/6ff951165bcbef5720ff03d90c53b27e6515a520">6ff9511</a> by Timothée Mazzucotelli).</li>
+<li>fix: Another patch for flake8/importlib-metadata conflicts (<a href="https://github.com/oedokumaci/python-production-template/commit/cc97999f0574f05e7a1a8b8495dac17e91f68c5e">cc97999</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use checkout action v3 (<a href="https://github.com/oedokumaci/python-production-template/commit/be43336208a4f89c7ee130b00137804429f83179">be43336</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use <code>license</code> field again (instead of <code>license-expression</code>) (<a href="https://github.com/oedokumaci/python-production-template/commit/d65665a48140624e4b1d7e120bac80b6f1ef6562">d65665a</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix safety duty never failing (<a href="https://github.com/oedokumaci/python-production-template/commit/3a4bdc8be6d37e6b0c0c61331683084bda32dc8b">3a4bdc8</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix PDM configuration for dynamic version (<a href="https://github.com/oedokumaci/python-production-template/commit/86bde7cf3382b9a5a14d61b90d0ad977b8f3b7b7">86bde7c</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix import error on Python 3.7 when generating credits (<a href="https://github.com/oedokumaci/python-production-template/commit/0f12894e980e8ea001a4a8908c46fb074091650a">0f12894</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix setup script for first time use (<a href="https://github.com/oedokumaci/python-production-template/commit/7ab9adc28d275ef57674ac948ea6595e3c172edb">7ab9adc</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix (really) PyPI badge (<a href="https://github.com/oedokumaci/python-production-template/commit/d7dc73fb6cdba9d886ec8e72b247a43d7265c102">d7dc73f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix docs tabs and PyPI badge (<a href="https://github.com/oedokumaci/python-production-template/commit/d7b0f3aba49a7c6f2807e56b9804d680e286edf6">d7b0f3a</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix Jinja "undefined" error when user is not "pawamoy" (<a href="https://github.com/oedokumaci/python-production-template/commit/01dcf3b3f32f38e77e48c20a8c21e66c6674fed5">01dcf3b</a> by Francisco Perez-Sorrosal).</li>
+<li>fix: Add missing section-index plugin in mkdocs.yml (<a href="https://github.com/oedokumaci/python-production-template/commit/611e99b5398b0369d8517155eba252d9f72bc462">611e99b</a> by Timothée Mazzucotelli).</li>
+<li>fixup! refactor: Run dependencies check only once (<a href="https://github.com/oedokumaci/python-production-template/commit/bd07ad3a879a6b001137d609080eb717a5a49fd9">bd07ad3</a> by Timothée Mazzucotelli).</li>
+<li>fixup! feat: Add make lock recipe (<a href="https://github.com/oedokumaci/python-production-template/commit/cc2239f0728014b39e4825fe64dbd6cb6d19ed70">cc2239f</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix credits building (<a href="https://github.com/oedokumaci/python-production-template/commit/bb9eaccd15182dc39b1945c8c665c82fed5c5000">bb9eacc</a> by Timothée Mazzucotelli).</li>
+<li>fix: Add migration to remove old files (<a href="https://github.com/oedokumaci/python-production-template/commit/ee48c18d27b4f6d9adaa44b8fa12ef7360232b05">ee48c18</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix generated code reference navigation (<a href="https://github.com/oedokumaci/python-production-template/commit/61be4e3e88d6504d2ef7dd567cb17472130eed8c">61be4e3</a> by Timothée Mazzucotelli).</li>
+<li>fix: Append missing trailing new lines (<a href="https://github.com/oedokumaci/python-production-template/commit/f3826822e8527f117a82042e55d93022cf978cba">f382682</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix combining coverage on shells without globbing (<a href="https://github.com/oedokumaci/python-production-template/commit/a2d7e179c14b11f511d03fbe81a9b7a687ad6651">a2d7e17</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix mypy warnings in docs/macros.py (<a href="https://github.com/oedokumaci/python-production-template/commit/517b0ba7d9fd44416c0698603fca352c6d7e4726">517b0ba</a> by Timothée Mazzucotelli).</li>
+<li>fix: Install a working PDM version (<a href="https://github.com/oedokumaci/python-production-template/commit/23f9c6a19ed25cb64af089593fd6b20498eb48ac">23f9c6a</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix caches names in CI (<a href="https://github.com/oedokumaci/python-production-template/commit/a1e9bed46d944caf293e2e41b3082a02a44c9cc9">a1e9bed</a> by Timothée Mazzucotelli).</li>
+<li>fix: Stop including README and pyproject.toml in package (<a href="https://github.com/oedokumaci/python-production-template/commit/54ea35b20ddd6112db9f3d312f6f41c142f9258d">54ea35b</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix parameter expansion not to override empty PYTHON_VERSIONS (<a href="https://github.com/oedokumaci/python-production-template/commit/0837d9c6b0d743b7c46544ae1d851c3c283bc917">0837d9c</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix LICENSE file being generated empty (<a href="https://github.com/oedokumaci/python-production-template/commit/b5f0fb3210cbe6f91ac4d5fc65e3261613b96126">b5f0fb3</a> by Timothée Mazzucotelli).</li>
+<li>fix: Use repository provider in MkDocs <code>site_url</code> and <code>repo_url</code> (<a href="https://github.com/oedokumaci/python-production-template/commit/24f57a4490efec27852dd9eebd5be62182b0ba51">24f57a4</a> by WhatTheServer).</li>
+<li>fix: Don't autoescape when updating changelog (<a href="https://github.com/oedokumaci/python-production-template/commit/2b63c222db7bea953bf8394434bd5931f7b5eda4">2b63c22</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix path in coverage config (<a href="https://github.com/oedokumaci/python-production-template/commit/e195a5b0a5d1c47b8ff5e4c02daaf648200c556d">e195a5b</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix CI cache key names (<a href="https://github.com/oedokumaci/python-production-template/commit/a22266ccb08706e1c4fb34de92e66ff502852743">a22266c</a> by Timothée Mazzucotelli).</li>
+<li>fix: Fix CI detection and PTY usage (<a href="https://github.com/oedokumaci/python-production-template/commit/20512fea7cc4b680ea3d5a6062b5b7826032fad7">20512fe</a> by Timothée Mazzucotelli).</li>
+<li>Fix Makefile arguments when they contain spaces (<a href="https://github.com/oedokumaci/python-production-template/commit/18afcb126117aa547644e11e287b4806bdf35f54">18afcb1</a> by Timothée Mazzucotelli).</li>
+<li>Fix typo (<a href="https://github.com/oedokumaci/python-production-template/commit/5183a17667cdd275f71d02df526268f17ec3bb86">5183a17</a> by Timothée Mazzucotelli).</li>
+<li>Fix errors when rendering some licenses (<a href="https://github.com/oedokumaci/python-production-template/commit/3822364152e65434c1ff25bf3caabb69c6d59d4a">3822364</a> by Timothée Mazzucotelli).</li>
+<li>Fix quality stuff (<a href="https://github.com/oedokumaci/python-production-template/commit/0278a810d497798b0616fcf666bb326f5be42669">0278a81</a> by Timothée Mazzucotelli).</li>
+<li>Fix style (<a href="https://github.com/oedokumaci/python-production-template/commit/bcb1936d7218b7455984c385e85b33d91ddcd576">bcb1936</a> by Timothée Mazzucotelli).</li>
+<li>Fix credits again (<a href="https://github.com/oedokumaci/python-production-template/commit/d17b06b05dd101bf53169ef24c98365a325e6de2">d17b06b</a> by Timothée Mazzucotelli).</li>
+<li>Fix duplicated entries in credits (<a href="https://github.com/oedokumaci/python-production-template/commit/ea248485e3a4a71b55108f04cf69a6f774ec8807">ea24848</a> by Timothée Mazzucotelli).</li>
+<li>Fix mkdocs palette (<a href="https://github.com/oedokumaci/python-production-template/commit/2593a60c96af65eed75bb304b966846c84e6f2e3">2593a60</a> by Timothée Mazzucotelli).</li>
+<li>Fix quality for tasks (<a href="https://github.com/oedokumaci/python-production-template/commit/3c5b8cc586ab5dcebfeec43cb3d6ba5c4b408ac6">3c5b8cc</a> by Timothée Mazzucotelli).</li>
+<li>Fix coverage combining for multiple runs (<a href="https://github.com/oedokumaci/python-production-template/commit/37396dd05bd40702876a16e8480966e386c96cbc">37396dd</a> by Timothée Mazzucotelli).</li>
+<li>Fix constant type (generator -&gt; tuple) (<a href="https://github.com/oedokumaci/python-production-template/commit/223350904f58b1e73e33a71487733d0df1ffdc09">2233509</a> by Timothée Mazzucotelli).</li>
+<li>Fix missing new line when updating changelog (<a href="https://github.com/oedokumaci/python-production-template/commit/5fbfbfa9525b276baf23d62877dbf7818607feef">5fbfbfa</a> by Timothée Mazzucotelli).</li>
+<li>Fix pipxproject URL (<a href="https://github.com/oedokumaci/python-production-template/commit/a3c6464af27d2f24a347ed6d4a8d5e375e6ec5f2">a3c6464</a> by Timothée Mazzucotelli).</li>
+<li>Fix makefile, badges, and update versions (<a href="https://github.com/oedokumaci/python-production-template/commit/959ba2f05fcf0e7253fc85bf45ed0e26537d8507">959ba2f</a> by Timothée Mazzucotelli).</li>
+<li>Fix git not setup in CI (<a href="https://github.com/oedokumaci/python-production-template/commit/2200b55b5e2f98aaa7e9b378b99c6eac39fd21b2">2200b55</a> by Timothée Mazzucotelli).</li>
+<li>Fix licenses for Windows (<a href="https://github.com/oedokumaci/python-production-template/commit/6b1ba5ed5f91c3af13c5ac128ce31ad663120f18">6b1ba5e</a> by Timothée Mazzucotelli).</li>
+<li>Fix symlinking (<a href="https://github.com/oedokumaci/python-production-template/commit/82efdffb27b77409a797b7306a422a2e00e062c4">82efdff</a> by Timothée Mazzucotelli).</li>
+<li>Fix docs / building wheel (<a href="https://github.com/oedokumaci/python-production-template/commit/b4755e119c5f3ed0c7381f18185ffff8a378664c">b4755e1</a> by Timothée Mazzucotelli).</li>
+<li>Fix check-dependencies (<a href="https://github.com/oedokumaci/python-production-template/commit/5f8bbb696503c3aa22954d23889e131a352e5e0b">5f8bbb6</a> by Timothée Mazzucotelli).</li>
+</ul>
+<h3 id="removed">Removed<a class="headerlink" href="#removed" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Remove duties from coverage ignores (<a href="https://github.com/oedokumaci/python-production-template/commit/cc780b37f322ced2bbcefd84b6eeee543ff8feba">cc780b3</a> by Timothée Mazzucotelli).</li>
+<li>Remove unused combine duty (<a href="https://github.com/oedokumaci/python-production-template/commit/b165eb145254a071715737354adbc59a1c5ebd8f">b165eb1</a> by Timothée Mazzucotelli).</li>
+<li>Remove 'v' prefix from versions (<a href="https://github.com/oedokumaci/python-production-template/commit/3c95d344d445e8ac951aa10dac11695228bbefa3">3c95d34</a> by Timothée Mazzucotelli).</li>
+<li>Remove useless noqa (<a href="https://github.com/oedokumaci/python-production-template/commit/5725fc3dc1dccb7ec269d8218e2ae5b9ead70e83">5725fc3</a> by Timothée Mazzucotelli).</li>
+<li>Remove flake8.ini, now using flakehell (<a href="https://github.com/oedokumaci/python-production-template/commit/36f7630d1919b501b52b6d732b310400acd63c5e">36f7630</a> by Timothée Mazzucotelli).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../contributing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contributing">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Contributing
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../license/" class="md-footer__link md-footer__link--next" aria-label="Next: License">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                License
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oedokumaci" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.tooltips","navigation.footer","navigation.indexes","navigation.sections","navigation.tabs","navigation.tabs.sticky","navigation.top","search.highlight","toc.follow"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5fcf0de6.min.js"></script>
+      
+    
+  </body>
+</html>
